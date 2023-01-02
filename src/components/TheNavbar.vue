@@ -22,8 +22,13 @@
           </li>
           <li class="nav-item">
             <router-link to="/about" active-class="active" class="nav-link"
-              >About</router-link
-            >
+              >About
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/jupiter" active-class="active" class="nav-link"
+              >Jupiter
+            </router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" active-class="active" to="/about"
