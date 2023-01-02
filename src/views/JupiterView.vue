@@ -4,7 +4,7 @@
     <p class="lead">
       Gabrielle and I adopted Jupiter on November 17, 2022. He is a red tabby —
       his namesake — (likely with some Maine Coon in him) who was found on the
-      street.
+      street. He is {{ jupiterAge }} months old.
     </p>
     <hr />
     <h2 class="card-title">Weight</h2>
@@ -40,7 +40,29 @@ export default {
         "2023-01-02",
       ],
       axisLabels: ["Date", "Weight (lbs)"],
+      birthday: new Date("2022-08-08"),
     };
+  },
+  computed: {
+    jupiterAge() {
+      const today = new Date();
+
+      function treatAsUTC(date) {
+        const result = new Date(date);
+        result.setMinutes(result.getMinutes() - result.getTimezoneOffset());
+        return result;
+      }
+
+      function daysBetween(startDate, endDate) {
+        const millisecondsPerDay = 24 * 60 * 60 * 1000;
+        return (
+          (treatAsUTC(endDate) - treatAsUTC(startDate)) / millisecondsPerDay
+        );
+      }
+
+      const numDays = daysBetween(this.birthday, today);
+      return Math.round(numDays / 30);
+    },
   },
 };
 </script>
