@@ -2,8 +2,9 @@
   <div class="container">
     <h1 class="display-1 pt-3">Jupiter</h1>
     <p class="lead">
-      Gabrielle and I adopted Jupiter on November 17, 2022. He is a red tabby
-      (likely with some Maine Coon in him) who was found on the street.
+      Gabrielle and I adopted Jupiter on November 17, 2022. He is a red tabby —
+      his namesake — (likely with some Maine Coon in him) who was found on the
+      street.
     </p>
     <hr />
     <h2 class="card-title">Weight</h2>
