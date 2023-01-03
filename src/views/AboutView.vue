@@ -12,7 +12,7 @@
         no muscles trying to be brief!</small
       >
     </p>
-    <div class="accordion" id="accordionExample">
+    <div class="accordion accordion-flush" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
           <button
