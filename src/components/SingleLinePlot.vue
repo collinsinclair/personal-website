@@ -7,7 +7,7 @@ import * as Plotly from "plotly.js-dist";
 
 export default {
   name: "SingleLinePlot",
-  props: ["x", "y", "xlabel", "ylabel", "title"],
+  props: ["x", "y", "xlabel", "ylabel", "title", "refreshFlag"],
   methods: {
     drawPlot() {
       const trace = [
@@ -31,6 +31,11 @@ export default {
   },
   mounted() {
     this.drawPlot();
+  },
+  watch: {
+    refreshFlag() {
+      this.drawPlot();
+    },
   },
 };
 </script>
