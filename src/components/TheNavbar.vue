@@ -31,6 +31,11 @@
             </router-link>
           </li>
           <li class="nav-item">
+            <router-link to="/activity" active-class="active" class="nav-link"
+              >Activity
+            </router-link>
+          </li>
+          <li class="nav-item">
             <router-link class="nav-link" active-class="active" to="/about"
               >Link
             </router-link>
