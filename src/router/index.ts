@@ -20,10 +20,12 @@ const router = createRouter({
     {
       path: "/jupiter",
       name: "jupiter",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/JupiterView.vue"),
+    },
+    {
+      path: "/activity",
+      name: "activity",
+      component: () => import("../views/ActivityView.vue"),
     },
   ],
 });
