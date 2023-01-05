@@ -26,7 +26,7 @@ export default {
   components: { SingleLinePlot },
   data() {
     return {
-      weights: [4.7, 4.5, 5, 4.6, 5.1, 5.4, 6.7, 6.9, 7, 7.2],
+      weights: [4.7, 4.5, 5, 4.6, 5.1, 5.4, 6.7, 6.9, 7, 7.2, 7.6],
       dates: [
         "2022-11-29",
         "2022-11-30",
@@ -38,6 +38,7 @@ export default {
         "2022-12-29",
         "2022-12-31",
         "2023-01-02",
+        "2023-01-05",
       ],
       axisLabels: ["Date", "Weight (lbs)"],
       birthday: new Date("2022-08-08"),
