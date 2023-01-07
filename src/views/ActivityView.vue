@@ -91,7 +91,7 @@ export default {
   components: { WorkoutsPlot, SingleLinePlot },
   data() {
     return {
-      weightValues: [177.7, 176.7, 176.6, 175.8, 176],
+      weightValues: [177.7, 176.7, 176.6, 175.8, 175.7],
       weightDates: [
         "2023-01-01",
         "2023-01-02",
