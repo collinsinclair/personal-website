@@ -12,8 +12,8 @@ export default {
     return {
       inclineWalkDates: ["2023-01-01", "2023-01-04"],
       inclineWalkActiveCalories: [442, 440],
-      stairStepperDates: ["2023-01-02"],
-      stairStepperActiveCalories: [484],
+      stairStepperDates: ["2023-01-02", "2023-01-05"],
+      stairStepperActiveCalories: [484, 464],
     };
   },
   methods: {
