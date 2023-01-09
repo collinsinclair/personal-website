@@ -27,6 +27,11 @@ const router = createRouter({
       name: "activity",
       component: () => import("../views/ActivityView.vue"),
     },
+    {
+      path: "/guidebooks/colorado-snow-climbs",
+      name: "colorado-snow-climbs",
+      component: () => import("../views/guidebooks/ColoradoSnowClimbs.vue"),
+    },
   ],
 });
 

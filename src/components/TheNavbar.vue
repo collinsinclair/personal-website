@@ -41,22 +41,36 @@
             </router-link>
           </li>
           <li class="nav-item dropdown">
-            <a
+            <router-link
               class="nav-link dropdown-toggle"
-              href="#"
+              active-class="active"
+              to="/guidebooks"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Dropdown
-            </a>
+              Guidebook Library
+            </router-link>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
               <li>
-                <hr class="dropdown-divider" />
+                <router-link class="dropdown-item disabled" to="#"
+                  >Best Hikes Rocky Mountain National Park
+                </router-link>
+                <router-link class="dropdown-item disabled" to="#"
+                  >Best Trail Runs Denver, Boulder & Colorado Springs
+                </router-link>
+                <router-link
+                  class="dropdown-item"
+                  :to="{ name: 'colorado-snow-climbs' }"
+                  >Colorado Snow Climbs
+                </router-link>
+                <router-link class="dropdown-item disabled" to="#"
+                  >Colorado Summit Hikes
+                </router-link>
+                <router-link class="dropdown-item disabled" to="#"
+                  >Hiking Colorado
+                </router-link>
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
         </ul>

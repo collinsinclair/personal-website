@@ -1,0 +1,34 @@
+{
+  "climbs": [
+    {
+      "name": "Atlantic Peak - West Ridge",
+      "gain": 2900,
+      "distance": 5.4,
+      "startElev": 10991,
+      "highestElev": 13841,
+      "bestMonths": [12, 1, 2, 3, 4],
+      "difficulty": "moderate",
+      "gear": ["snowshoes", "ice axe"]
+    },
+    {
+      "name": "Fletcher Mountain via Drift Peak",
+      "gain": 2900,
+      "distance": 5.4,
+      "startElev": 10991,
+      "highestElev": 13951,
+      "bestMonths": [12, 1, 2, 3, 4, 5],
+      "difficulty": "strenuous",
+      "gear": ["snowshoes", "ice axe"]
+    },
+    {
+      "name": "Grizzly Peak",
+      "gain": 2900,
+      "distance": 5.6,
+      "startElev": 10814,
+      "highestElev": 13427,
+      "bestMonths": [12, 1, 2, 3, 4, 5],
+      "difficulty": "easy",
+      "gear": ["ice axe"]
+    }
+  ]
+}
