@@ -29,6 +29,76 @@
       "bestMonths": [12, 1, 2, 3, 4, 5],
       "difficulty": "easy",
       "gear": ["ice axe"]
+    },
+    {
+      "name": "Byers Peak",
+      "gain": 4140,
+      "distance": 13,
+      "startElev": 9050,
+      "highestElev": 12804,
+      "bestMonths": [12, 1, 2, 3, 4],
+      "difficulty": "strenuous",
+      "gear": ["snowshoes", "ice axe"]
+    },
+    {
+      "name": "North Start Mountain - East Ridge",
+      "gain": 2700,
+      "distance": 8.4,
+      "startElev": 11530,
+      "highestElev": 13614,
+      "bestMonths": [12, 1, 2, 3, 4, 5],
+      "difficulty": "moderate",
+      "gear": ["snowshoes", "ice axe"]
+    },
+    {
+      "name": "Mount Bancroft - East Ridge",
+      "gain": 3030,
+      "distance": 7.9,
+      "startElev": 10360,
+      "highestElev": 13250,
+      "bestMonths": [12, 1, 2, 3, 4, 5],
+      "difficulty": "strenuous",
+      "gear": ["crampons", "ice axe", "snowshoes", "helmet", "rope", "pro"]
+    },
+    {
+      "name": "Mount Lady Washington - Martha Couloir",
+      "gain": 3940,
+      "distance": 8.4,
+      "startElev": 9450,
+      "highestElev": 13281,
+      "bestMonths": [12, 1, 2, 3, 4, 5],
+      "difficulty": "strenuous",
+      "gear": ["ice tools", "crampons", "rope", "pro", "ice screws", "helmet"]
+    },
+    {
+      "name": "Longs Peak - North Face (Cables Route)",
+      "gain": 4850,
+      "distance": 12.2,
+      "startElev": 9450,
+      "highestElev": 14267,
+      "bestMonths": [12, 1, 2, 3, 4, 5],
+      "difficulty": "strenuous",
+      "gear": ["crampons", "ice tools", "pro", "rope"]
+    },
+    {
+      "name": "Mount Guyot - Southeast Ridge",
+      "gain": 2500,
+      "distance": 4.2,
+      "startElev": 10814,
+      "highestElev": 13370,
+      "bestMonths": [4, 5, 6],
+      "difficulty": "moderate",
+      "gear": ["ice axe", "snowshoes"]
+    },
+    {
+      "name": "Fletcher Mountain - Southeast Ridge",
+      "gain": 3100,
+      "distance": 8.0,
+      "startElev": 10900,
+      "highestElev": 13951,
+      "bestMonths": [4, 5, 6],
+      "difficulty": "moderate",
+      "gear": ["ice axe", "snowshoes"]
     }
   ]
 }
