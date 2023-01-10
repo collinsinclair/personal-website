@@ -49,7 +49,7 @@
                 :class="[
                   'btn',
                   'ms-1',
-                  currentMonthOnly ? 'btn-primary' : 'btn-light',
+                  currentMonthOnly ? 'btn-danger' : 'btn-light',
                 ]"
                 style="
                   --bs-btn-padding-y: 0;
