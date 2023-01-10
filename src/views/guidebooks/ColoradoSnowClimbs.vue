@@ -2,6 +2,7 @@
   <div class="container">
     <h1 class="display-1 pt-3">Colorado Snow Climbs</h1>
     <h2>Dave Cooper</h2>
+    <hr />
     <div class="table-responsive">
       <table class="table table-striped table-hover">
         <thead>
@@ -85,11 +86,18 @@
         </tbody>
       </table>
     </div>
+    <hr />
+    <h3>Statistics</h3>
+    <div ref="gain-histogram"></div>
+    <div ref="distance-histogram"></div>
+    <div ref="start-elevation-histogram"></div>
+    <div ref="end-elevation-histogram"></div>
   </div>
 </template>
 
 <script>
 import climbs from "./coloradoSnowClimbs.json";
+import * as Plotly from "plotly.js-dist";
 
 export default {
   name: "ColoradoSnowClimbs",
@@ -176,6 +184,49 @@ export default {
         return "bi bi-dash";
       }
     },
+    drawHistrogram(_ref, _data, xlabel) {
+      const trace = {
+        x: _data,
+        type: "histogram",
+      };
+      const layout = {
+        bargap: 0.05,
+        // bargroupgap: 0.2,
+        // title: "Sampled Results",
+        xaxis: { title: xlabel },
+        // yaxis: { title: "Count" },
+      };
+      Plotly.newPlot(_ref, [trace], layout);
+    },
+    drawHistograms() {
+      const gainData = this.sortedClimbs.map((climb) => climb.gain);
+      this.drawHistrogram(this.$refs["gain-histogram"], gainData, "Gain (ft)");
+
+      const distanceData = this.sortedClimbs.map((climb) => climb.distance);
+      this.drawHistrogram(
+        this.$refs["distance-histogram"],
+        distanceData,
+        "Distance (mi)"
+      );
+
+      const startElevationData = this.sortedClimbs.map(
+        (climb) => climb.startElev
+      );
+      this.drawHistrogram(
+        this.$refs["start-elevation-histogram"],
+        startElevationData,
+        "Start Elevation (ft)"
+      );
+
+      const endElevationData = this.sortedClimbs.map(
+        (climb) => climb.highestElev
+      );
+      this.drawHistrogram(
+        this.$refs["end-elevation-histogram"],
+        endElevationData,
+        "End Elevation (ft)"
+      );
+    },
   },
   watch: {
     sortParam() {
@@ -230,6 +281,9 @@ export default {
         return this.sortAscending ? comparison : -comparison;
       });
     },
+  },
+  mounted() {
+    this.drawHistograms();
   },
 };
 </script>
