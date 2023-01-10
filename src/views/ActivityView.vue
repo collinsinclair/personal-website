@@ -114,13 +114,14 @@ export default {
   components: { SkiChart, WorkoutsPlot, SingleLinePlot },
   data() {
     return {
-      weightValues: [177.7, 176.7, 176.6, 175.8, 175.7],
+      weightValues: [177.7, 176.7, 176.6, 175.8, 175.7, 175.4],
       weightDates: [
         "2023-01-01",
         "2023-01-02",
         "2023-01-04",
         "2023-01-05",
         "2023-01-07",
+        "2023-01-09",
       ],
       weightOpen: false,
       workoutsOpen: false,
