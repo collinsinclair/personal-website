@@ -42,7 +42,25 @@
                 @click="setSortParam('highestElev')"
               />
             </th>
-            <th scope="col">Best Months</th>
+            <th scope="col">
+              Best Months
+              <button
+                type="button"
+                :class="[
+                  'btn',
+                  'ms-1',
+                  currentMonthOnly ? 'btn-primary' : 'btn-light',
+                ]"
+                style="
+                  --bs-btn-padding-y: 0;
+                  --bs-btn-padding-x: 0.5rem;
+                  --bs-btn-font-size: 0.75rem;
+                "
+                @click="() => (currentMonthOnly = !currentMonthOnly)"
+              >
+                {{ currentMonthOnly ? "Show All" : getThisMonth + " Only" }}
+              </button>
+            </th>
           </tr>
         </thead>
         <tbody class="table-group-divider">
@@ -80,6 +98,7 @@ export default {
       climbs: climbs.climbs,
       sortParam: null,
       sortAscending: false,
+      currentMonthOnly: false,
     };
   },
   methods: {
@@ -164,12 +183,44 @@ export default {
     },
   },
   computed: {
-    sortedClimbs() {
-      if (this.sortParam === null) {
+    getThisMonth() {
+      const monthNames = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      const d = new Date();
+      return monthNames[d.getMonth()];
+    },
+    filteredClimbs() {
+      if (this.currentMonthOnly) {
+        console.log("filtered called!");
+        const d = new Date();
+        const monthNum = d.getMonth() + 1;
+        return this.climbs.filter((climb) => {
+          if (climb.bestMonths.includes(monthNum)) {
+            return climb;
+          }
+        });
+      } else {
         return this.climbs;
       }
-      const climbCopy = [...this.climbs];
-      return climbCopy.sort((a, b) => {
+    },
+    sortedClimbs() {
+      if (this.sortParam === null) {
+        return this.filteredClimbs;
+      }
+      const _sortedClimbs = [...this.filteredClimbs];
+      return _sortedClimbs.sort((a, b) => {
         let comparison;
         if (typeof a[this.sortParam] === "number") {
           comparison = a[this.sortParam] - b[this.sortParam];
@@ -184,7 +235,7 @@ export default {
 </script>
 
 <style scoped>
-i:hover {
+th i:hover {
   background-color: lightgray;
   border-radius: 5px;
 }
