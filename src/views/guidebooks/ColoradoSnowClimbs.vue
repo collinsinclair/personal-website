@@ -126,8 +126,12 @@ export default {
           return "bi bi-circle-fill";
         case "moderate":
           return "bi bi-square-fill";
-        case "strenuous":
+        case "steep":
           return "bi bi-diamond-fill";
+        case "very steep":
+          return "bi bi-exclamation-diamond-fill";
+        case "z vertical":
+          return "bi bi-exclamation-triangle-fill";
       }
     },
     getDifficultyColor(difficulty) {
@@ -136,8 +140,12 @@ export default {
           return "green";
         case "moderate":
           return "blue";
-        case "strenuous":
+        case "steep":
           return "black";
+        case "very steep":
+          return "black";
+        case "z vertical":
+          return "orange";
       }
     },
     getBestMonthString(bestMonths) {
