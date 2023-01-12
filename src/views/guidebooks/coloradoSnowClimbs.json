@@ -99,6 +99,133 @@
       "bestMonths": [4, 5, 6],
       "difficulty": "moderate",
       "gear": ["ice axe", "snowshoes"]
+    },
+    {
+      "name": "Quandary Peak - South Couloir (Cristo Couloir)",
+      "gain": 2550,
+      "distance": 2.3,
+      "startElev": 11700,
+      "highestElev": 14265,
+      "bestMonths": [4, 5, 6],
+      "difficulty": "moderate",
+      "gear": ["crampons", "ice axe", "helmet"]
+    },
+    {
+      "name": "Wheeler Mountain",
+      "gain": 2900,
+      "distance": 9,
+      "startElev": 10890,
+      "highestElev": 13690,
+      "bestMonths": [4, 5, 6],
+      "difficulty": "moderate",
+      "gear": ["crampons", "ice axe"]
+    },
+    {
+      "name": "Castle Peak - Northeast Ridge",
+      "gain": 4500,
+      "distance": 10.9,
+      "startElev": 9750,
+      "highestElev": 14265,
+      "bestMonths": [5, 6],
+      "difficulty": "easy",
+      "gear": ["crampons", "ice axe", "snowshoes"]
+    },
+    {
+      "name": "Niagara Peak - Northeast Face and East Ridge",
+      "gain": 3050,
+      "distance": 6.2,
+      "startElev": 10767,
+      "highestElev": 13807,
+      "bestMonths": [5, 6],
+      "difficulty": "moderate",
+      "gear": ["ice axe", "crampons", "snowshoes"]
+    },
+    {
+      "name": "Flattop Mountain - Dragons Tail Couloir",
+      "gain": 2540,
+      "distance": 5.8,
+      "startElev": 9462,
+      "highestElev": 11800,
+      "bestMonths": [5, 6],
+      "difficulty": "strenuous",
+      "gear": ["rope", "crampons", "ice tools", "helmet"]
+    },
+    {
+      "name": "Torreys Peak - Dead Dog Couloir",
+      "gain": 3100,
+      "distance": 6.5,
+      "startElev": 11250,
+      "highestElev": 14267,
+      "bestMonths": [5, 6],
+      "difficulty": "strenuous",
+      "gear": ["crampons", "ice axe", "snowshoes", "helmet"]
+    },
+    {
+      "name": "South Arapaho Peak",
+      "gain": 3280,
+      "distance": 6.0,
+      "startElev": 10172,
+      "highestElev": 13397,
+      "bestMonths": [5, 6],
+      "difficulty": "strenuous",
+      "gear": [
+        "crampons",
+        "ice axe",
+        "ice tools",
+        "snowshoes",
+        "helmet",
+        "rope"
+      ]
+    },
+    {
+      "name": "Mount Jasper Snow Climbs (Featuring the Snow Lion)",
+      "gain": 3400,
+      "distance": 9,
+      "startElev": 10172,
+      "highestElev": 12923,
+      "bestMonths": [5, 6],
+      "difficulty": "strenuous",
+      "gear": ["crampons", "ice axe", "ice tools", "snowshoes", "helmet"]
+    },
+    {
+      "name": "Mount Neva - Northeast Cirque (Featuring Juliet)",
+      "gain": 2700,
+      "distance": 8.2,
+      "startElev": 10172,
+      "highestElev": 12814,
+      "bestMonths": [5, 6],
+      "difficulty": "moderate",
+      "gear": ["crampons", "ice axe", "snowshoes", "helmet"]
+    },
+    {
+      "name": "Savage Mountain - The Savage Couloir",
+      "gain": 3280,
+      "distance": 7.5,
+      "startElev": 10020,
+      "highestElev": 13139,
+      "bestMonths": [5, 6, 7],
+      "difficulty": "strenuous",
+      "gear": ["crampons", "ice axe", "snowshoes", "helmet", "ice tools"]
+    },
+    {
+      "name": "Mount Democrat",
+      "gain": 2600,
+      "distance": 9.9,
+      "startElev": 10900,
+      "highestElev": 13600,
+      "bestMonths": [6, 7],
+      "difficulty": "moderate",
+      "gear": ["ice axe", "crampons", "helmet"]
+    },
+    {
+      "name": "Mount Meeker - Dreamweaver",
+      "gain": 4700,
+      "distance": 10.1,
+      "startElev": 9450,
+      "highestElev": 13911,
+      "bestMonths": [5, 6],
+      "difficulty": "strenuous",
+      "gear": ["ice axe", "crampons", "helmet"]
     }
   ]
 }

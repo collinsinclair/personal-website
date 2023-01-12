@@ -201,7 +201,6 @@ export default {
     drawHistograms() {
       const gainData = this.sortedClimbs.map((climb) => climb.gain);
       this.drawHistrogram(this.$refs["gain-histogram"], gainData, "Gain (ft)");
-
       const distanceData = this.sortedClimbs.map((climb) => climb.distance);
       this.drawHistrogram(
         this.$refs["distance-histogram"],
@@ -231,6 +230,9 @@ export default {
   watch: {
     sortParam() {
       console.log(this.sortParam);
+    },
+    currentMonthOnly() {
+      this.drawHistograms();
     },
   },
   computed: {
