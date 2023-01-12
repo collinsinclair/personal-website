@@ -35,11 +35,6 @@
               >Activity
             </router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" active-class="active" to="/about"
-              >Link
-            </router-link>
-          </li>
           <li class="nav-item dropdown">
             <router-link
               class="nav-link dropdown-toggle"
