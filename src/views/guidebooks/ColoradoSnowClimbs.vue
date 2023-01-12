@@ -151,9 +151,13 @@ export default {
     getBestMonthString(bestMonths) {
       const startMonth = bestMonths[0];
       const endMonth = bestMonths.at(-1);
-      return `${this.numberToMonthString(
-        startMonth
-      )} through ${this.numberToMonthString(endMonth)}`;
+      if (startMonth === endMonth) {
+        return this.numberToMonthString(startMonth);
+      } else {
+        return `${this.numberToMonthString(
+          startMonth
+        )} through ${this.numberToMonthString(endMonth)}`;
+      }
     },
     numberToMonthString(num) {
       switch (num) {
