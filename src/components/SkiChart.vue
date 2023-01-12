@@ -30,7 +30,7 @@ export default {
         "Steamboat",
         "Winter Park",
       ],
-      visits: [0, 0, 0, 0, 0],
+      visits: [0, 1, 0, 0, 0],
     };
   },
   props: ["refreshFlag"],
