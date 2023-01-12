@@ -7,8 +7,7 @@
       "startElev": 10991,
       "highestElev": 13841,
       "bestMonths": [12, 1, 2, 3, 4],
-      "difficulty": "moderate",
-      "gear": ["snowshoes", "ice axe"]
+      "difficulty": "moderate"
     },
     {
       "name": "Fletcher Mountain via Drift Peak",
@@ -17,8 +16,7 @@
       "startElev": 10991,
       "highestElev": 13951,
       "bestMonths": [12, 1, 2, 3, 4, 5],
-      "difficulty": "strenuous",
-      "gear": ["snowshoes", "ice axe"]
+      "difficulty": "z vertical"
     },
     {
       "name": "Grizzly Peak",
@@ -27,8 +25,7 @@
       "startElev": 10814,
       "highestElev": 13427,
       "bestMonths": [12, 1, 2, 3, 4, 5],
-      "difficulty": "easy",
-      "gear": ["ice axe"]
+      "difficulty": "easy"
     },
     {
       "name": "Byers Peak",
@@ -37,8 +34,7 @@
       "startElev": 9050,
       "highestElev": 12804,
       "bestMonths": [12, 1, 2, 3, 4],
-      "difficulty": "strenuous",
-      "gear": ["snowshoes", "ice axe"]
+      "difficulty": "steep"
     },
     {
       "name": "North Start Mountain - East Ridge",
@@ -47,8 +43,7 @@
       "startElev": 11530,
       "highestElev": 13614,
       "bestMonths": [12, 1, 2, 3, 4, 5],
-      "difficulty": "moderate",
-      "gear": ["snowshoes", "ice axe"]
+      "difficulty": "moderate"
     },
     {
       "name": "Mount Bancroft - East Ridge",
@@ -57,8 +52,7 @@
       "startElev": 10360,
       "highestElev": 13250,
       "bestMonths": [12, 1, 2, 3, 4, 5],
-      "difficulty": "strenuous",
-      "gear": ["crampons", "ice axe", "snowshoes", "helmet", "rope", "pro"]
+      "difficulty": "z vertical"
     },
     {
       "name": "Mount Lady Washington - Martha Couloir",
@@ -67,8 +61,7 @@
       "startElev": 9450,
       "highestElev": 13281,
       "bestMonths": [12, 1, 2, 3, 4, 5],
-      "difficulty": "strenuous",
-      "gear": ["ice tools", "crampons", "rope", "pro", "ice screws", "helmet"]
+      "difficulty": "z vertical"
     },
     {
       "name": "Longs Peak - North Face (Cables Route)",
@@ -77,8 +70,7 @@
       "startElev": 9450,
       "highestElev": 14267,
       "bestMonths": [12, 1, 2, 3, 4, 5],
-      "difficulty": "strenuous",
-      "gear": ["crampons", "ice tools", "pro", "rope"]
+      "difficulty": "z vertical"
     },
     {
       "name": "Mount Guyot - Southeast Ridge",
@@ -87,8 +79,7 @@
       "startElev": 10814,
       "highestElev": 13370,
       "bestMonths": [4, 5, 6],
-      "difficulty": "moderate",
-      "gear": ["ice axe", "snowshoes"]
+      "difficulty": "moderate"
     },
     {
       "name": "Fletcher Mountain - Southeast Ridge",
@@ -107,8 +98,7 @@
       "startElev": 11700,
       "highestElev": 14265,
       "bestMonths": [4, 5, 6],
-      "difficulty": "moderate",
-      "gear": ["crampons", "ice axe", "helmet"]
+      "difficulty": "moderate"
     },
     {
       "name": "Wheeler Mountain",
@@ -117,8 +107,7 @@
       "startElev": 10890,
       "highestElev": 13690,
       "bestMonths": [4, 5, 6],
-      "difficulty": "moderate",
-      "gear": ["crampons", "ice axe"]
+      "difficulty": "moderate"
     },
     {
       "name": "Castle Peak - Northeast Ridge",
@@ -127,8 +116,7 @@
       "startElev": 9750,
       "highestElev": 14265,
       "bestMonths": [5, 6],
-      "difficulty": "easy",
-      "gear": ["crampons", "ice axe", "snowshoes"]
+      "difficulty": "easy"
     },
     {
       "name": "Niagara Peak - Northeast Face and East Ridge",
@@ -137,8 +125,7 @@
       "startElev": 10767,
       "highestElev": 13807,
       "bestMonths": [5, 6],
-      "difficulty": "moderate",
-      "gear": ["ice axe", "crampons", "snowshoes"]
+      "difficulty": "moderate"
     },
     {
       "name": "Flattop Mountain - Dragons Tail Couloir",
@@ -147,8 +134,7 @@
       "startElev": 9462,
       "highestElev": 11800,
       "bestMonths": [5, 6],
-      "difficulty": "strenuous",
-      "gear": ["rope", "crampons", "ice tools", "helmet"]
+      "difficulty": "steep"
     },
     {
       "name": "Torreys Peak - Dead Dog Couloir",
@@ -157,8 +143,7 @@
       "startElev": 11250,
       "highestElev": 14267,
       "bestMonths": [5, 6],
-      "difficulty": "strenuous",
-      "gear": ["crampons", "ice axe", "snowshoes", "helmet"]
+      "difficulty": "steep"
     },
     {
       "name": "South Arapaho Peak",
@@ -167,15 +152,7 @@
       "startElev": 10172,
       "highestElev": 13397,
       "bestMonths": [5, 6],
-      "difficulty": "strenuous",
-      "gear": [
-        "crampons",
-        "ice axe",
-        "ice tools",
-        "snowshoes",
-        "helmet",
-        "rope"
-      ]
+      "difficulty": "very steep"
     },
     {
       "name": "Mount Jasper Snow Climbs (Featuring the Snow Lion)",
@@ -184,8 +161,7 @@
       "startElev": 10172,
       "highestElev": 12923,
       "bestMonths": [5, 6],
-      "difficulty": "strenuous",
-      "gear": ["crampons", "ice axe", "ice tools", "snowshoes", "helmet"]
+      "difficulty": "steep"
     },
     {
       "name": "Mount Neva - Northeast Cirque (Featuring Juliet)",
@@ -194,8 +170,7 @@
       "startElev": 10172,
       "highestElev": 12814,
       "bestMonths": [5, 6],
-      "difficulty": "moderate",
-      "gear": ["crampons", "ice axe", "snowshoes", "helmet"]
+      "difficulty": "moderate"
     },
     {
       "name": "Savage Mountain - The Savage Couloir",
@@ -204,8 +179,7 @@
       "startElev": 10020,
       "highestElev": 13139,
       "bestMonths": [5, 6, 7],
-      "difficulty": "strenuous",
-      "gear": ["crampons", "ice axe", "snowshoes", "helmet", "ice tools"]
+      "difficulty": "steep"
     },
     {
       "name": "Mount Democrat",
@@ -214,8 +188,7 @@
       "startElev": 10900,
       "highestElev": 13600,
       "bestMonths": [6, 7],
-      "difficulty": "moderate",
-      "gear": ["ice axe", "crampons", "helmet"]
+      "difficulty": "moderate"
     },
     {
       "name": "Mount Meeker - Dreamweaver",
@@ -224,8 +197,187 @@
       "startElev": 9450,
       "highestElev": 13911,
       "bestMonths": [5, 6],
-      "difficulty": "strenuous",
-      "gear": ["ice axe", "crampons", "helmet"]
+      "difficulty": "z vertical"
+    },
+    {
+      "name": "Fletcher Mountain - East Face Routes",
+      "gain": 2900,
+      "distance": 7.7,
+      "startElev": 10920,
+      "highestElev": 13951,
+      "bestMonths": [5, 6],
+      "difficulty": "very steep"
+    },
+    {
+      "name": "Citadel Peak Couloirs",
+      "gain": 2950,
+      "distance": 7.6,
+      "startElev": 10296,
+      "highestElev": 13294,
+      "bestMonths": [5, 6, 7],
+      "difficulty": "moderate"
+    },
+    {
+      "name": "East Thorn - North Couloir",
+      "gain": 4640,
+      "distance": 12,
+      "startElev": 9000,
+      "highestElev": 13333,
+      "bestMonths": [6, 7],
+      "difficulty": "moderate"
+    },
+    {
+      "name": "Pacific Peak - North Couloir",
+      "gain": 2780,
+      "distance": 7,
+      "startElev": 11110,
+      "highestElev": 13950,
+      "bestMonths": [5, 6, 7],
+      "difficulty": "moderate"
+    },
+    {
+      "name": "Snowdon Peak - Northwest Couloir (Naked Lady Couloir)",
+      "gain": 2330,
+      "distance": 6,
+      "startElev": 10750,
+      "highestElev": 13077,
+      "bestMonths": [5, 6],
+      "difficulty": "steep"
+    },
+    {
+      "name": "Quandary Peak - North Face Couloirs",
+      "gain": 3480,
+      "distance": 7.3,
+      "startElev": 10920,
+      "highestElev": 14265,
+      "bestMonths": [5, 6],
+      "difficulty": "moderate"
+    },
+    {
+      "name": "Sundance Mountain - North Face Couloir",
+      "gain": 1000,
+      "distance": 1.3,
+      "startElev": 12120,
+      "highestElev": 12400,
+      "bestMonths": [6, 7],
+      "difficulty": "steep"
+    },
+    {
+      "name": "Longs Peak Area - The Flying Dutchman Couloir",
+      "gain": 4200,
+      "distance": 9.7,
+      "startElev": 9450,
+      "highestElev": 13455,
+      "bestMonths": [5, 6, 7],
+      "difficulty": "z vertical"
+    },
+    {
+      "name": "James Peak - Northeast Face Couloirs",
+      "gain": 3250,
+      "distance": 7.5,
+      "startElev": 10400,
+      "highestElev": 13294,
+      "bestMonths": [6, 7],
+      "difficulty": "z vertical"
+    },
+    {
+      "name": "North Twilight Peak - North Face Couloirs",
+      "gain": 3240,
+      "distance": 13.6,
+      "startElev": 10172,
+      "highestElev": 13397,
+      "bestMonths": [6, 7],
+      "difficulty": "steep"
+    },
+    {
+      "name": "Potosi Peak - North Couloir",
+      "gain": 3200,
+      "distance": 3.7,
+      "startElev": 11350,
+      "highestElev": 13786,
+      "bestMonths": [6, 7],
+      "difficulty": "steep"
+    },
+    {
+      "name": "Longs Peak - Notch Couloir",
+      "gain": 5500,
+      "distance": 11.4,
+      "startElev": 9450,
+      "highestElev": 14251,
+      "bestMonths": [6, 7],
+      "difficulty": "z vertical"
+    },
+    {
+      "name": "Ypsilon Mountain - East Face",
+      "gain": 5400,
+      "distance": 11.6,
+      "startElev": 8550,
+      "highestElev": 13514,
+      "bestMonths": [7],
+      "difficulty": "z vertical"
+    },
+    {
+      "name": "Flattop Mountain Couloirs - Ptarmigan Fingers",
+      "gain": 3000,
+      "distance": 8.6,
+      "startElev": 9462,
+      "highestElev": 12324,
+      "bestMonths": [6, 7, 8, 9, 10],
+      "difficulty": "steep"
+    },
+    {
+      "name": "Rollins Pass Area - Challenger Glacier",
+      "gain": 2600,
+      "distance": 11.4,
+      "startElev": 11290,
+      "highestElev": 12200,
+      "bestMonths": [7, 8, 9, 10],
+      "difficulty": "z vertical"
+    },
+    {
+      "name": "Rollins Pass Area - Skyscraper Glacier",
+      "gain": 2320,
+      "distance": 8.2,
+      "startElev": 11290,
+      "highestElev": 12200,
+      "bestMonths": [7, 8, 9, 10],
+      "difficulty": "very steep"
+    },
+    {
+      "name": "Apache Peak - Fair Glacier and Queens Way Couloir",
+      "gain": 6000,
+      "distance": 15.3,
+      "startElev": 10500,
+      "highestElev": 13441,
+      "bestMonths": [6, 7],
+      "difficulty": "steep"
+    },
+    {
+      "name": "Taylor Glacier",
+      "gain": 3960,
+      "distance": 10.8,
+      "startElev": 9480,
+      "highestElev": 12890,
+      "bestMonths": [6, 7, 8, 9, 10],
+      "difficulty": "z vertical"
+    },
+    {
+      "name": "Tyndall Glacier",
+      "gain": 3000,
+      "distance": 7.4,
+      "startElev": 9462,
+      "highestElev": 12324,
+      "bestMonths": [6, 7, 8, 9, 10],
+      "difficulty": "very steep"
+    },
+    {
+      "name": "Thatchtop - Powell Ice Field",
+      "gain": 4150,
+      "distance": 11.2,
+      "startElev": 9480,
+      "highestElev": 12970,
+      "bestMonths": [9, 10],
+      "difficulty": "z vertical"
     }
   ]
 }
