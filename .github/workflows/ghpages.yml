@@ -27,7 +27,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Deploy Vite website
-        run:
+        run: |
           npm run build
           cd dist
           echo 'www.collinsinclair.com' > CNAME
