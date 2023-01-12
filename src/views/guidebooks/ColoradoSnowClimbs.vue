@@ -88,10 +88,12 @@
     </div>
     <hr />
     <h3>Statistics</h3>
-    <div ref="gain-histogram"></div>
-    <div ref="distance-histogram"></div>
-    <div ref="start-elevation-histogram"></div>
-    <div ref="end-elevation-histogram"></div>
+    <div class="row mb-5">
+      <div ref="gain-histogram" class="col-lg"></div>
+      <div ref="distance-histogram" class="col-lg"></div>
+      <div ref="start-elevation-histogram" class="col-lg"></div>
+      <div ref="end-elevation-histogram" class="col-lg"></div>
+    </div>
   </div>
 </template>
 
