@@ -198,25 +198,31 @@ export default {
         return "bi bi-dash";
       }
     },
-    drawHistrogram(_ref, _data, xlabel) {
+    drawHistogram(_ref, _data, xlabel) {
       const trace = {
         x: _data,
         type: "histogram",
       };
       const layout = {
         bargap: 0.05,
-        // bargroupgap: 0.2,
-        // title: "Sampled Results",
-        xaxis: { title: xlabel },
-        // yaxis: { title: "Count" },
+        xaxis: { title: xlabel, automargin: true },
+        showlegend: false,
+        margin: {
+          l: 32,
+          r: 32,
+          b: 32,
+          t: 32,
+          pad: 8,
+        },
       };
-      Plotly.newPlot(_ref, [trace], layout);
+      const config = { responsive: true, displayModeBar: false };
+      Plotly.newPlot(_ref, [trace], layout, config);
     },
     drawHistograms() {
       const gainData = this.sortedClimbs.map((climb) => climb.gain);
-      this.drawHistrogram(this.$refs["gain-histogram"], gainData, "Gain (ft)");
+      this.drawHistogram(this.$refs["gain-histogram"], gainData, "Gain (ft)");
       const distanceData = this.sortedClimbs.map((climb) => climb.distance);
-      this.drawHistrogram(
+      this.drawHistogram(
         this.$refs["distance-histogram"],
         distanceData,
         "Distance (mi)"
@@ -225,7 +231,7 @@ export default {
       const startElevationData = this.sortedClimbs.map(
         (climb) => climb.startElev
       );
-      this.drawHistrogram(
+      this.drawHistogram(
         this.$refs["start-elevation-histogram"],
         startElevationData,
         "Start Elevation (ft)"
@@ -234,7 +240,7 @@ export default {
       const endElevationData = this.sortedClimbs.map(
         (climb) => climb.highestElev
       );
-      this.drawHistrogram(
+      this.drawHistogram(
         this.$refs["end-elevation-histogram"],
         endElevationData,
         "End Elevation (ft)"
