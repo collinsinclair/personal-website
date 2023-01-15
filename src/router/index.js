@@ -32,6 +32,11 @@ const router = createRouter({
       name: "colorado-snow-climbs",
       component: () => import("../views/guidebooks/ColoradoSnowClimbs.vue"),
     },
+    {
+      path: "/student-loans",
+      name: "student-loans",
+      component: () => import("../views/StudentLoans.vue"),
+    },
   ],
 });
 

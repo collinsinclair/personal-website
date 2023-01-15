@@ -26,7 +26,7 @@ export default {
           title: this.ylabel,
         },
       };
-      Plotly.newPlot(this.$refs.plot, trace, layout);
+      Plotly.newPlot(this.$refs.plot, trace, layout, { responsive: true });
     },
   },
   mounted() {

@@ -35,6 +35,14 @@
               >Activity
             </router-link>
           </li>
+          <li class="nav-item">
+            <router-link
+              to="/student-loans"
+              active-class="active"
+              class="nav-link"
+              >Student Loans
+            </router-link>
+          </li>
           <li class="nav-item dropdown">
             <router-link
               class="nav-link dropdown-toggle"
