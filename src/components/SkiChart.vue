@@ -37,7 +37,7 @@ export default {
   methods: {
     drawBarChart() {
       const data = [{ x: this.resorts, y: this.visits, type: "bar" }];
-      Plotly.newPlot(this.$refs.plot, data);
+      Plotly.newPlot(this.$refs.plot, data, {}, { responsive: true });
     },
   },
   mounted() {
