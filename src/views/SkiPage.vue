@@ -9,7 +9,28 @@
       days. I'll probably also post some good pictures or videos.
     </p>
     <div ref="resort-visits-plot"></div>
-    <h3>Cost of Ikon Pass Per Visit</h3>
+    <h2>Season Summary</h2>
+    <p>
+      This season, I have skied a total of
+      <strong>{{ totalRuns }} runs</strong>, spanning
+      <strong>{{ totalHorizontalDistance }} miles</strong> and
+      <strong>{{ totalVertical.toLocaleString() }} vertical feet</strong>.
+    </p>
+    <p>
+      My average run is <strong>{{ averageRunDistance }} miles</strong> long and
+      drops <strong>{{ averageRunVertical.toLocaleString() }} feet</strong>. I
+      travel at an average speed of
+      <strong>{{ averageSpeed }} miles per hour.</strong>
+    </p>
+    <p>
+      My top speed so far has been
+      <strong>{{ topSpeed }} miles per hour</strong>; my tallest run has spanned
+      <strong>{{ tallestRun.toLocaleString() }} vertical feet</strong>; and my
+      longest run has spanned <strong>{{ longestRun }} miles</strong>. My
+      highest altitude this season has been
+      <strong>{{ highestAltitude.toLocaleString() }} feet</strong>.
+    </p>
+    <h2>Cost of Ikon Pass Per Visit</h2>
     <p>
       Here I'll calculate how much the Ikon pass costs per trip to determine if
       it's worth it for me. I have gone skiing {{ daysSkiing }} days this
@@ -34,6 +55,16 @@ export default {
         "Winter Park",
       ],
       visits: [0, 1, 0, 0, 1],
+      totalVertical: 12500,
+      totalRuns: 16,
+      totalHorizontalDistance: 18.2,
+      averageRunVertical: 781,
+      averageRunDistance: 1.1,
+      averageSpeed: 13,
+      topSpeed: 26,
+      tallestRun: 1758,
+      highestAltitude: 12149,
+      longestRun: 2.8,
     };
   },
   props: ["refreshFlag"],
