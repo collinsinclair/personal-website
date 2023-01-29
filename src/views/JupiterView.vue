@@ -28,7 +28,7 @@ export default {
     return {
       weights: [
         4.7, 4.5, 5, 4.6, 5.1, 5.4, 6.7, 6.9, 7, 7.2, 7.6, 7.6, 7.4, 7.8, 7.9,
-        8.1, 8.2, 8.3,
+        8.1, 8.2, 8.3, 8.7,
       ],
       dates: [
         "2022-11-29",
@@ -49,6 +49,7 @@ export default {
         "2023-01-16",
         "2023-01-19",
         "2023-01-25",
+        "2023-01-28",
       ],
       axisLabels: ["Date", "Weight (lbs)"],
       birthday: new Date("2022-08-08"),
@@ -72,7 +73,7 @@ export default {
       }
 
       const numDays = daysBetween(this.birthday, today);
-      return Math.round(numDays / 30);
+      return Math.floor(numDays / 30);
     },
   },
 };
