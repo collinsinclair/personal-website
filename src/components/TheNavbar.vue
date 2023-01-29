@@ -31,17 +31,28 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/activity" active-class="active" class="nav-link"
-              >Activity
-            </router-link>
-          </li>
-          <li class="nav-item">
             <router-link
               to="/student-loans"
               active-class="active"
               class="nav-link"
               >Student Loans
             </router-link>
+          </li>
+          <li class="nav-item dropdown">
+            <router-link
+              class="nav-link dropdown-toggle"
+              active-class="active"
+              to="/activity"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Activity
+            </router-link>
+            <ul class="dropdown-menu">
+              <li>
+                <router-link class="dropdown-item" to="/ski">Ski</router-link>
+              </li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
             <router-link

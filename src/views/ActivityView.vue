@@ -41,39 +41,16 @@
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="skiHeading">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#skiCollapse"
-            @click="skiOpen = !skiOpen"
-          >
-            Skiing
-          </button>
-        </h2>
-        <div
-          id="skiCollapse"
-          class="accordion-collapse collapse"
-          data-bs-parent="#activityAccordion"
-        >
-          <div class="accordion-body">
-            <SkiChart :refresh-flag="skiOpen" />
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
 import SingleLinePlot from "@/components/SingleLinePlot.vue";
-import SkiChart from "@/components/SkiChart.vue";
 
 export default {
   name: "ActivityView",
-  components: { SkiChart, SingleLinePlot },
+  components: { SingleLinePlot },
   data() {
     return {
       weightValues: [177.7, 176.7, 176.6, 175.8, 175.7, 175.4, 177.7, 175],

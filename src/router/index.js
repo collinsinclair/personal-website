@@ -37,6 +37,11 @@ const router = createRouter({
       name: "student-loans",
       component: () => import("../views/StudentLoans.vue"),
     },
+    {
+      path: "/ski",
+      name: "ski",
+      component: () => import("../views/SkiPage.vue"),
+    },
   ],
 });
 
