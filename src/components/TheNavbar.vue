@@ -78,7 +78,9 @@
                   :to="{ name: 'colorado-snow-climbs' }"
                   >Colorado Snow Climbs
                 </router-link>
-                <router-link class="dropdown-item disabled" to="#"
+                <router-link
+                  class="dropdown-item"
+                  to="/guidebooks/colorado-summit-hikes"
                   >Colorado Summit Hikes
                 </router-link>
                 <router-link class="dropdown-item disabled" to="#"

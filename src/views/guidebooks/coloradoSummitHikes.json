@@ -1,0 +1,52 @@
+{
+  "hikes": [
+    {
+      "name": "Genesee Mountain",
+      "difficulty": 0,
+      "elevation": 8284,
+      "distance": 0.8,
+      "startElev": 7980,
+      "gain": 304,
+      "upTime": 12,
+      "downTime": 8,
+      "season": [4, 5, 6, 7, 8, 9, 10, 11],
+      "nearestLandmark": "Denver"
+    },
+    {
+      "name": "Little Baldy Mountain",
+      "difficulty": 1,
+      "elevation": 12142,
+      "distance": 4,
+      "startElev": 10240,
+      "gain": 2002,
+      "upTime": 88,
+      "downTime": 76,
+      "season": [6, 7, 8, 9, 10],
+      "nearestLandmark": "Fairplay"
+    },
+    {
+      "name": "Ypsilon Mountain",
+      "difficulty": 2,
+      "elevation": 13514,
+      "distance": 8.6,
+      "startElev": 11020,
+      "gain": 3123,
+      "upTime": 176,
+      "downTime": 106,
+      "season": [7, 8, 9, 10],
+      "nearestLandmark": "Estes Park"
+    },
+    {
+      "name": "Engineer Mountain",
+      "difficulty": 3,
+      "elevation": 13218,
+      "distance": 18.2,
+      "startElev": 8854,
+      "gain": 4364,
+      "upTime": 360,
+      "downTime": 240,
+      "season": [6, 7, 8, 9, 10],
+      "nearestLandmark": "Ouray"
+    }
+  ]
+}

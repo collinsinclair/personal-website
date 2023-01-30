@@ -42,6 +42,11 @@ const router = createRouter({
       name: "ski",
       component: () => import("../views/SkiPage.vue"),
     },
+    {
+      path: "/guidebooks/colorado-summit-hikes",
+      name: "colorado-summit-hikes",
+      component: () => import("../views/guidebooks/ColoradoSummitHikes.vue"),
+    },
   ],
 });
 
