@@ -3,48 +3,20 @@
     <h1 class="display-1 pt-3">Colorado Summit Climbs</h1>
     <h2>Dave Muller</h2>
     <hr />
-    <div class="table-responsive">
-      <table class="table table-striped table-hover">
-        <thead>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Difficulty</th>
-            <th scope="col">Summit Elevation</th>
-            <th scope="col">RT Distance (mi)</th>
-            <th scope="col">Gain (ft)</th>
-            <th scope="col">Starting Elevation</th>
-            <th scope="col">ETE</th>
-            <th scope="col">Season</th>
-            <th scope="col">Nearest Landmark</th>
-          </tr>
-        </thead>
-        <tbody class="table-group-divider">
-          <tr v-for="hike in hikes" :key="hike.name">
-            <th scope="col">{{ hike.name }}</th>
-            <td class="text-center">
-              <i
-                :class="hike.difficultyCSS.className"
-                :style="{ color: hike.difficultyCSS.color }"
-              />
-            </td>
-            <td class="text-center">{{ hike.elevation.toLocaleString() }}</td>
-            <td class="text-center">{{ hike.distance.toLocaleString() }}</td>
-            <td class="text-center">{{ hike.gain.toLocaleString() }}</td>
-            <td class="text-center">
-              {{ hike["startElev"].toLocaleString() }}
-            </td>
-            <td class="text-center">
-              {{ getETEInHours(hike["upTime"] + hike["downTime"]) }}
-            </td>
-            <td class="text-center">
-              {{ getMonthName(hike["season"][0]) }} thru
-              {{ getMonthName(hike["season"].at(-1)) }}
-            </td>
-            <td class="text-center">{{ hike["nearestLandmark"] }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <v-data-table :items="hikes" :headers="headers">
+      <template v-slot:item.elevation="{ item }">
+        {{ item.value.elevation.toLocaleString() }}
+      </template>
+      <template v-slot:item.distance="{ item }">
+        {{ item.value.distance.toLocaleString() }}
+      </template>
+      <template v-slot:item.gain="{ item }">
+        {{ item.value.gain.toLocaleString() }}
+      </template>
+      <template v-slot:item.startElev="{ item }">
+        {{ item.value.startElev.toLocaleString() }}
+      </template>
+    </v-data-table>
   </div>
 </template>
 
@@ -56,6 +28,16 @@ export default {
   data() {
     return {
       hikes: data.hikes,
+      headers: [
+        { title: "Name", key: "name" },
+        { title: "Difficulty", key: "difficulty" },
+        { title: "Summit Elevation", key: "elevation" },
+        { title: "Distance (mi)", key: "distance" },
+        { title: "Elevation Gain (ft)", key: "gain" },
+        { title: "Start Elevation", key: "startElev" },
+        { title: "ETE (hr)", key: "ETE" },
+        { title: "Nearest Landmark", key: "nearestLandmark" },
+      ],
     };
   },
   methods: {
@@ -115,9 +97,10 @@ export default {
       return difficultyCSS;
     },
   },
-  mounted() {
+  created() {
     this.hikes = this.hikes.map((hike) => {
       hike.difficultyCSS = this.getDifficultyCSS(hike.difficulty);
+      hike.ETE = this.getETEInHours(hike.upTime + hike.downTime);
       return hike;
     });
   },

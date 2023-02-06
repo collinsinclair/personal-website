@@ -1,13 +1,29 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
+import "vuetify/styles";
+import { createVuetify } from "vuetify";
+import * as components from "vuetify/components";
+import * as directives from "vuetify/directives";
+import { VDataTable } from "vuetify/labs/VDataTable";
+import { aliases, mdi } from "vuetify/iconsets/mdi";
+import "@mdi/font/css/materialdesignicons.css";
 
-const app = createApp(App);
+const vuetify = createVuetify({
+  components: {
+    ...components,
+    VDataTable,
+  },
+  directives,
+  icons: {
+    defaultSet: "mdi",
+    aliases,
+    sets: {
+      mdi,
+    },
+  },
+});
 
-app.use(router);
+const app = createApp(App).use(router).use(vuetify);
 
 app.mount("#app");
-
-import "bootstrap/dist/js/bootstrap.js";
