@@ -110,10 +110,13 @@ export default {
       return newCoords;
     },
     logCoords() {
-      let sortedCoords = this.hikes.map((hike) => [hike.name, hike.summitCoords]);
+      let sortedCoords = this.hikes.map((hike) => [
+        hike.name,
+        hike.summitCoords,
+      ]);
       // sort by summitCoords[0] (longitude)
       sortedCoords.sort((a, b) => a[1][0] - b[1][0]);
-      console.log(sortedCoords)
+      console.log(sortedCoords);
     },
   },
   created() {

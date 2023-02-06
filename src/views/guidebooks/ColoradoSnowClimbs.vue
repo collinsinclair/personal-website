@@ -98,6 +98,8 @@
 </template>
 
 <script>
+let currentMonthOnly;
+
 import climbs from "./coloradoSnowClimbs.json";
 import * as Plotly from "plotly.js-dist";
 

@@ -27,9 +27,7 @@
       </template>
     </MapboxMarker>
     <MapboxMarker v-if="userLat && userLng" :lng-lat="[userLng, userLat]">
-      <v-icon icon="mdi-map-marker" style="color:#3877ff">
-
-      </v-icon>
+      <v-icon icon="mdi-map-marker" style="color: #3877ff"></v-icon>
     </MapboxMarker>
   </MapboxMap>
 </template>
