@@ -2,13 +2,17 @@
   <div class="container">
     <h1 class="display-1 pt-3">Colorado Summit Climbs</h1>
     <h2>Dave Muller</h2>
-    <ClimbMap />
-    <v-data-table :items="hikes" :headers="headers">
+    <ClimbMap :hikes="hikes" />
+    <v-data-table
+      :items="hikes"
+      :headers="headers"
+      :items-per-page="itemsPerPage"
+    >
       <template v-slot:item.difficulty="{ item }">
-        <span
-          :class="item.value.difficultyCSS.className"
+        <v-icon
+          :icon="item.value.difficultyCSS.icon"
           :style="{ color: item.value.difficultyCSS.color }"
-        ></span>
+        ></v-icon>
       </template>
       <template v-slot:item.elevation="{ item }">
         {{ item.value.elevation.toLocaleString() }}
@@ -46,6 +50,7 @@ export default {
         { title: "ETE (hr)", key: "ETE" },
         { title: "Nearest Landmark", key: "nearestLandmark" },
       ],
+      itemsPerPage: 10,
     };
   },
   methods: {
@@ -54,35 +59,72 @@ export default {
     },
     getDifficultyCSS(difficulty) {
       const difficultyCSS = {
-        className: "bi",
+        icon: "mdi-",
         color: "",
       };
       switch (difficulty) {
         case 0:
-          difficultyCSS.className += " bi-circle-fill";
+          difficultyCSS.icon += "circle";
           difficultyCSS.color = "green";
           break;
         case 1:
-          difficultyCSS.className += " bi-square-fill";
+          difficultyCSS.icon += "square-rounded";
           difficultyCSS.color = "blue";
           break;
         case 2:
-          difficultyCSS.className += " bi-diamond-fill";
+          difficultyCSS.icon += "rhombus";
           difficultyCSS.color = "black";
           break;
         case 3:
-          difficultyCSS.className += " bi-exclamation-diamond-fill";
-          difficultyCSS.color = "black";
+          difficultyCSS.icon += "skull";
+          difficultyCSS.color = "red";
       }
       return difficultyCSS;
+    },
+    parseLatLng(lat, lng) {
+      const coords = [lng, lat];
+      const newCoords = [];
+      coords.forEach((coord) => {
+        if (typeof coord !== "string") {
+          throw new Error(`Invalid input: ${coord} is not a string`);
+        }
+        const match = coord.match(/(-?\d+)d(\d+)m(\d+\.?\d*)s/);
+        if (match) {
+          const [, degrees, minutes, seconds] = match.map(Number);
+          let decimal = degrees + minutes / 60 + seconds / 3600;
+          if (decimal > 50) {
+            decimal *= -1;
+          }
+          newCoords.push(decimal);
+        } else if (!isNaN(Number(coord))) {
+          if (coord > 50) {
+            coord *= -1;
+          }
+          newCoords.push(Number(coord));
+        } else {
+          throw new Error(
+            `Invalid input: ${coord} is not a valid coordinate string`
+          );
+        }
+      });
+      return newCoords;
+    },
+    logCoords() {
+      let sortedCoords = this.hikes.map((hike) => [hike.name, hike.summitCoords]);
+      // sort by summitCoords[0] (longitude)
+      sortedCoords.sort((a, b) => a[1][0] - b[1][0]);
+      console.log(sortedCoords)
     },
   },
   created() {
     this.hikes = this.hikes.map((hike) => {
-      hike.difficultyCSS = this.getDifficultyCSS(hike.difficulty);
-      hike.ETE = this.getETEInHours(hike.upTime + hike.downTime);
+      hike.difficultyCSS = this.getDifficultyCSS(hike["difficulty"]);
+      hike.ETE = this.getETEInHours(hike["upTime"] + hike["downTime"]);
+      hike.summitCoords = this.parseLatLng(hike.lat, hike.long);
       return hike;
     });
+    this.itemsPerPage = this.hikes.length;
+    this.logCoords();
   },
 };
 </script>

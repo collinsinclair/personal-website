@@ -10,7 +10,9 @@
       "upTime": 12,
       "downTime": 8,
       "season": [4, 5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Denver"
+      "nearestLandmark": "Denver",
+      "lat": "39d42m11s",
+      "long": "105d17m35s"
     },
     {
       "name": "Bald Mountain",
@@ -22,7 +24,9 @@
       "upTime": 14,
       "downTime": 8,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Boulder"
+      "nearestLandmark": "Boulder",
+      "lat": "40.0258",
+      "long": "105.4522"
     },
     {
       "name": "Ormes Peak",
@@ -34,7 +38,9 @@
       "upTime": 22,
       "downTime": 8,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Colorado Springs"
+      "nearestLandmark": "Colorado Springs",
+      "lat": "38d57m02s",
+      "long": "104d56m03s"
     },
     {
       "name": "Mount Falcon",
@@ -46,7 +52,9 @@
       "upTime": 20,
       "downTime": 15,
       "season": [4, 5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Kittredge"
+      "nearestLandmark": "Kittredge",
+      "lat": "39d38m08s",
+      "long": "105d13m36s"
     },
     {
       "name": "Fox Mountain",
@@ -58,7 +66,9 @@
       "upTime": 25,
       "downTime": 15,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Idaho Springs"
+      "nearestLandmark": "Idaho Springs",
+      "lat": "39d49m59s",
+      "long": "105d38m35s"
     },
     {
       "name": "Mount Cutler",
@@ -70,7 +80,9 @@
       "upTime": 23,
       "downTime": 20,
       "season": [4, 5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Colorado Springs"
+      "nearestLandmark": "Colorado Springs",
+      "lat": "38d47m12s",
+      "long": "104d52m38s"
     },
     {
       "name": "Alps Mountain",
@@ -82,7 +94,9 @@
       "upTime": 30,
       "downTime": 26,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Idaho Springs"
+      "nearestLandmark": "Idaho Springs",
+      "lat": "39d43m40s",
+      "long": "105d35m49s"
     },
     {
       "name": "Mestaa'ėhehe Mountain",
@@ -94,7 +108,9 @@
       "upTime": 27,
       "downTime": 21,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Idaho Springs"
+      "nearestLandmark": "Idaho Springs",
+      "lat": "39d40m46s",
+      "long": "105d29m32s"
     },
     {
       "name": "St. Peters Dome",
@@ -106,7 +122,9 @@
       "upTime": 28,
       "downTime": 21,
       "season": [5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Colorado Springs"
+      "nearestLandmark": "Colorado Springs",
+      "lat": "38d44m32s",
+      "long": "104d54m43s"
     },
     {
       "name": "Cheesman Mountain",
@@ -118,7 +136,9 @@
       "upTime": 34,
       "downTime": 26,
       "season": [4, 5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Deckers"
+      "nearestLandmark": "Deckers",
+      "lat": "39d14m03s",
+      "long": "105d16m12s"
     },
     {
       "name": "The Brother",
@@ -130,7 +150,9 @@
       "upTime": 21,
       "downTime": 38,
       "season": [4, 5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Evergreen"
+      "nearestLandmark": "Evergreen",
+      "lat": "39d37m51s",
+      "long": "105d20m49s"
     },
     {
       "name": "Lichen Peak",
@@ -142,7 +164,9 @@
       "upTime": 99,
       "downTime": 0,
       "season": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      "nearestLandmark": "Golden"
+      "nearestLandmark": "Golden",
+      "lat": "39.7555",
+      "long": "105.2105"
     },
     {
       "name": "Fairburn Mountain",
@@ -154,7 +178,9 @@
       "upTime": 45,
       "downTime": 35,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Black Hawk"
+      "nearestLandmark": "Black Hawk",
+      "lat": "39d51m34s",
+      "long": "105d30m18s"
     },
     {
       "name": "Devils Head",
@@ -166,7 +192,9 @@
       "upTime": 53,
       "downTime": 48,
       "season": [5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Sedalia"
+      "nearestLandmark": "Sedalia",
+      "lat": "39d15m37s",
+      "long": "105d06m02s"
     },
     {
       "name": "Colorado Mines Peak",
@@ -178,7 +206,9 @@
       "upTime": 55,
       "downTime": 38,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Empire"
+      "nearestLandmark": "Empire",
+      "lat": "39d47m45s",
+      "long": "105d45m50s"
     },
     {
       "name": "South Peak",
@@ -190,7 +220,9 @@
       "upTime": 60,
       "downTime": 40,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Leadville"
+      "nearestLandmark": "Leadville",
+      "lat": "39d07m18s",
+      "long": "106d12m20s"
     },
     {
       "name": "Royal Mountain",
@@ -202,7 +234,9 @@
       "upTime": 56,
       "downTime": 38,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Frisco"
+      "nearestLandmark": "Frisco",
+      "lat": "39d34m07s",
+      "long": "106d06m32s"
     },
     {
       "name": "Chief Mountain",
@@ -214,7 +248,9 @@
       "upTime": 45,
       "downTime": 39,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Idaho Springs"
+      "nearestLandmark": "Idaho Springs",
+      "lat": "39d40m32s",
+      "long": "105d31m21s"
     },
     {
       "name": "Mount Zion",
@@ -226,7 +262,9 @@
       "upTime": 21,
       "downTime": 18,
       "season": [4, 5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Golden"
+      "nearestLandmark": "Golden",
+      "lat": "39d44m30s",
+      "long": "105d14m24s"
     },
     {
       "name": "Colorow Hill",
@@ -238,7 +276,9 @@
       "upTime": 38,
       "downTime": 25,
       "season": [4, 5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Golden"
+      "nearestLandmark": "Golden",
+      "lat": "39d43m57s",
+      "long": "105d14m43s"
     },
     {
       "name": "Fitzpatrick Peak",
@@ -250,7 +290,9 @@
       "upTime": 57,
       "downTime": 40,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Buena Vista"
+      "nearestLandmark": "Buena Vista",
+      "lat": "38d41m52s",
+      "long": "106d27m03s"
     },
     {
       "name": "Emma Burr Mountain",
@@ -262,7 +304,9 @@
       "upTime": 56,
       "downTime": 34,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Buena Vista"
+      "nearestLandmark": "Buena Vista",
+      "lat": "38d44m02s",
+      "long": "106d24m56s"
     },
     {
       "name": "Green Mountain",
@@ -274,7 +318,9 @@
       "upTime": 60,
       "downTime": 45,
       "season": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      "nearestLandmark": "Lakewood"
+      "nearestLandmark": "Lakewood",
+      "lat": "39d42m03s",
+      "long": "105d10m39s"
     },
     {
       "name": "Lily Mountain",
@@ -286,7 +332,9 @@
       "upTime": 55,
       "downTime": 53,
       "season": [5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Estes Park"
+      "nearestLandmark": "Estes Park",
+      "lat": "40d19m09s",
+      "long": "105d32m27s"
     },
     {
       "name": "Douglas Mountain",
@@ -298,7 +346,9 @@
       "upTime": 75,
       "downTime": 70,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Georgetown"
+      "nearestLandmark": "Georgetown",
+      "lat": "39.752206243967265",
+      "long": "-105.67583679254948"
     },
     {
       "name": "Diamond Peaks",
@@ -310,7 +360,9 @@
       "upTime": 66,
       "downTime": 33,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Walden"
+      "nearestLandmark": "Walden",
+      "lat": "40d31m17s",
+      "long": "105d54m37s"
     },
     {
       "name": "Mount Sniktau",
@@ -322,7 +374,9 @@
       "upTime": 90,
       "downTime": 75,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Dillon"
+      "nearestLandmark": "Dillon",
+      "lat": "39.678228043767525",
+      "long": "105.8577275587587"
     },
     {
       "name": "Glacier Peak",
@@ -334,7 +388,9 @@
       "upTime": 77,
       "downTime": 65,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Jefferson"
+      "nearestLandmark": "Jefferson",
+      "lat": "39d29m03s",
+      "long": "105d52m59s"
     },
     {
       "name": "Geneva Mountain",
@@ -346,7 +402,9 @@
       "upTime": 88,
       "downTime": 86,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Georgetown"
+      "nearestLandmark": "Georgetown",
+      "lat": "39d33m02s",
+      "long": "105d41m34s"
     },
     {
       "name": "Mount Volz",
@@ -358,7 +416,9 @@
       "upTime": 79,
       "downTime": 58,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Fairplay"
+      "nearestLandmark": "Fairplay",
+      "lat": "39d23m09s",
+      "long": "105d55m43s"
     },
     {
       "name": "Round Hill",
@@ -370,7 +430,9 @@
       "upTime": 80,
       "downTime": 70,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Fairplay"
+      "nearestLandmark": "Fairplay",
+      "lat": "39d08m07s",
+      "long": "106d03m48s"
     },
     {
       "name": "Kingston Peak",
@@ -382,7 +444,9 @@
       "upTime": 82,
       "downTime": 58,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Idaho Springs"
+      "nearestLandmark": "Idaho Springs",
+      "lat": "39d50m51s",
+      "long": "105d39m01s"
     },
     {
       "name": "Mount Epworth",
@@ -394,7 +458,9 @@
       "upTime": 83,
       "downTime": 72,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Winter Park"
+      "nearestLandmark": "Winter Park",
+      "lat": "39d55m30s",
+      "long": "105d41m22s"
     },
     {
       "name": "West White Pine Mountain",
@@ -406,7 +472,9 @@
       "upTime": 76,
       "downTime": 54,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Masonville"
+      "nearestLandmark": "Masonville",
+      "lat": "40d36m19s",
+      "long": "105d28m16s"
     },
     {
       "name": "Tremont Mountain",
@@ -418,7 +486,9 @@
       "upTime": 90,
       "downTime": 60,
       "season": [5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Golden"
+      "nearestLandmark": "Golden",
+      "lat": "39d51m59s",
+      "long": "105d26m10s"
     },
     {
       "name": "Mount Sheridan",
@@ -430,7 +500,9 @@
       "upTime": 90,
       "downTime": 60,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Fairplay"
+      "nearestLandmark": "Fairplay",
+      "lat": "39d12m33s",
+      "long": "106d11m03s"
     },
     {
       "name": "Chalk Mountain",
@@ -442,7 +514,9 @@
       "upTime": 85,
       "downTime": 60,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Leadville"
+      "nearestLandmark": "Leadville",
+      "lat": "39d22m15s",
+      "long": "106d11m48s"
     },
     {
       "name": "Revenue Mountain",
@@ -454,7 +528,9 @@
       "upTime": 85,
       "downTime": 70,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Dillon"
+      "nearestLandmark": "Dillon",
+      "lat": "39d25m00s",
+      "long": "105d48m28s"
     },
     {
       "name": "Mays Peak",
@@ -466,7 +542,9 @@
       "upTime": 86,
       "downTime": 59,
       "season": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      "nearestLandmark": "Colorado Springs"
+      "nearestLandmark": "Colorado Springs",
+      "lat": "38.80130",
+      "long": "104.8962"
     },
     {
       "name": "Little Baldy Mountain",
@@ -478,7 +556,9 @@
       "upTime": 88,
       "downTime": 76,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Fairplay"
+      "nearestLandmark": "Fairplay",
+      "lat": "39d19m43s",
+      "long": "105d56m51s"
     },
     {
       "name": "Bottle Peak",
@@ -490,7 +570,9 @@
       "upTime": 95,
       "downTime": 70,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Fraser"
+      "nearestLandmark": "Fraser",
+      "lat": "39d54m08s",
+      "long": "105d56m09s"
     },
     {
       "name": "Kelso Mountain",
@@ -502,7 +584,9 @@
       "upTime": 93,
       "downTime": 54,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Bakerville"
+      "nearestLandmark": "Bakerville",
+      "lat": "39d39m32s",
+      "long": "105d47m59s"
     },
     {
       "name": "Horsetooth Peak",
@@ -514,7 +598,9 @@
       "upTime": 110,
       "downTime": 68,
       "season": [5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Meeker Park"
+      "nearestLandmark": "Meeker Park",
+      "lat": "40d13m55s",
+      "long": "105d33m34s"
     },
     {
       "name": "Woods Mountain",
@@ -526,7 +612,9 @@
       "upTime": 90,
       "downTime": 70,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Empire"
+      "nearestLandmark": "Empire",
+      "lat": "39d43m20s",
+      "long": "105d50m21s"
     },
     {
       "name": "Griffith Mountain",
@@ -538,7 +626,9 @@
       "upTime": 100,
       "downTime": 60,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Idaho Springs"
+      "nearestLandmark": "Idaho Springs",
+      "lat": "39d42m06s",
+      "long": "105d40m24s"
     },
     {
       "name": "Mount Democrat",
@@ -550,7 +640,9 @@
       "upTime": 92,
       "downTime": 67,
       "season": [7, 8, 9, 10],
-      "nearestLandmark": "Alma"
+      "nearestLandmark": "Alma",
+      "lat": "39.3397",
+      "long": "106.1400"
     },
     {
       "name": "Vasquez Peak",
@@ -562,7 +654,9 @@
       "upTime": 110,
       "downTime": 90,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Empire"
+      "nearestLandmark": "Empire",
+      "lat": "39d47m46s",
+      "long": "105d51m16s"
     },
     {
       "name": "Estes Cone",
@@ -574,7 +668,9 @@
       "upTime": 87,
       "downTime": 80,
       "season": [5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Estes Park"
+      "nearestLandmark": "Estes Park",
+      "lat": "40d17m43s",
+      "long": "105d34m00s"
     },
     {
       "name": "Caribou Peak",
@@ -586,7 +682,9 @@
       "upTime": 115,
       "downTime": 85,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Nederland"
+      "nearestLandmark": "Nederland",
+      "lat": "39d58m42s",
+      "long": "105d35m17s"
     },
     {
       "name": "Thunder Butte",
@@ -598,7 +696,9 @@
       "upTime": 123,
       "downTime": 119,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Deckers"
+      "nearestLandmark": "Deckers",
+      "lat": "39.25471",
+      "long": "105.22694"
     },
     {
       "name": "Mount Trelease",
@@ -610,7 +710,9 @@
       "upTime": 125,
       "downTime": 95,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Bakerville"
+      "nearestLandmark": "Bakerville",
+      "lat": "39d41m44s",
+      "long": "105d54m09s"
     },
     {
       "name": "Grizzly Peak",
@@ -622,7 +724,9 @@
       "upTime": 122,
       "downTime": 95,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Loveland Pass"
+      "nearestLandmark": "Loveland Pass",
+      "lat": "39d38m40s",
+      "long": "105d50m53s"
     },
     {
       "name": "Resolution Mountain",
@@ -634,7 +738,9 @@
       "upTime": 120,
       "downTime": 70,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Leadville"
+      "nearestLandmark": "Leadville",
+      "lat": "39d29m33s",
+      "long": "106d17m38s"
     },
     {
       "name": "Teller Mountain",
@@ -646,7 +752,9 @@
       "upTime": 119,
       "downTime": 92,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Dillon"
+      "nearestLandmark": "Dillon",
+      "lat": "39.5361",
+      "long": "105.8567"
     },
     {
       "name": "Twin Cones",
@@ -658,7 +766,9 @@
       "upTime": 140,
       "downTime": 115,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Empire"
+      "nearestLandmark": "Empire",
+      "lat": "39d50m14s",
+      "long": "105d47m09s"
     },
     {
       "name": "Mount Bethel",
@@ -670,7 +780,9 @@
       "upTime": 93,
       "downTime": 54,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Bakerville"
+      "nearestLandmark": "Bakerville",
+      "lat": "39d42m36s",
+      "long": "105d52m41s"
     },
     {
       "name": "Hornsilver Mountain",
@@ -682,7 +794,9 @@
       "upTime": 120,
       "downTime": 100,
       "season": [5, 6, 7, 8, 9, 10],
-      "nearestLandmark": "Redcliff"
+      "nearestLandmark": "Redcliff",
+      "lat": "39d29m49s",
+      "long": "106d19m28s"
     },
     {
       "name": "Bald Mountain",
@@ -694,7 +808,9 @@
       "upTime": 130,
       "downTime": 90,
       "season": [7, 8, 9, 10],
-      "nearestLandmark": "Breckenridge"
+      "nearestLandmark": "Breckenridge",
+      "lat": "39d26m38s",
+      "long": "105d58m08s"
     },
     {
       "name": "Mount Wilcox and Otter Mountain",
@@ -706,7 +822,9 @@
       "upTime": 162,
       "downTime": 68,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Georgetown"
+      "nearestLandmark": "Georgetown",
+      "lat": "39d37m00s",
+      "long": "105d45m26s"
     },
     {
       "name": "Fletcher Mountain",
@@ -718,7 +836,9 @@
       "upTime": 127,
       "downTime": 107,
       "season": [7, 8, 9, 10],
-      "nearestLandmark": "Breckenridge"
+      "nearestLandmark": "Breckenridge",
+      "lat": "39.4033",
+      "long": "105.1289"
     },
     {
       "name": "Bergen Peak",
@@ -730,7 +850,9 @@
       "upTime": 120,
       "downTime": 80,
       "season": [4, 5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Evergreen"
+      "nearestLandmark": "Evergreen",
+      "lat": "39d39m58s",
+      "long": "105d23m41s"
     },
     {
       "name": "Raleigh Peak",
@@ -742,7 +864,9 @@
       "upTime": 185,
       "downTime": 127,
       "season": [4, 5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Buffalo Creek"
+      "nearestLandmark": "Buffalo Creek",
+      "lat": "39d23m43s",
+      "long": "105d12m53s"
     },
     {
       "name": "Ganley Mountain and Pendleton Mountain",
@@ -754,7 +878,9 @@
       "upTime": 185,
       "downTime": 140,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Georgetown"
+      "nearestLandmark": "Georgetown",
+      "lat": "39d40m58s",
+      "long": "105d44m59s"
     },
     {
       "name": "Horseshoe Mountain",
@@ -766,7 +892,9 @@
       "upTime": 106,
       "downTime": 82,
       "season": [7, 8, 9, 10],
-      "nearestLandmark": "Fairplay"
+      "nearestLandmark": "Fairplay",
+      "lat": "39d11m09s",
+      "long": "106d11m05s"
     },
     {
       "name": "Whale Peak",
@@ -778,7 +906,9 @@
       "upTime": 148,
       "downTime": 95,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Grant"
+      "nearestLandmark": "Grant",
+      "lat": "39d29m40s",
+      "long": "105d51m57s"
     },
     {
       "name": "Sugarloaf Peak",
@@ -790,7 +920,9 @@
       "upTime": 142,
       "downTime": 96,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Idaho Springs"
+      "nearestLandmark": "Idaho Springs",
+      "lat": "39d38m59s",
+      "long": "105d41m28s"
     },
     {
       "name": "Quail Mountain",
@@ -802,7 +934,9 @@
       "upTime": 140,
       "downTime": 90,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Buena Vista"
+      "nearestLandmark": "Buena Vista",
+      "lat": "39d01m05s",
+      "long": "106d23m39s"
     },
     {
       "name": "Mount Manitou and Rocky Mountain",
@@ -814,7 +948,9 @@
       "upTime": 153,
       "downTime": 83,
       "season": [4, 5, 6, 7, 8, 9, 10, 11],
-      "nearestLandmark": "Manitou Springs"
+      "nearestLandmark": "Manitou Springs",
+      "lat": "38d51m53s",
+      "long": "104d57m48s"
     },
     {
       "name": "Buffalo Mountain",
@@ -826,7 +962,9 @@
       "upTime": 150,
       "downTime": 90,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Silverthorne"
+      "nearestLandmark": "Silverthorne",
+      "lat": "39d37m00s",
+      "long": "106d08m31s"
     },
     {
       "name": "Peak 8",
@@ -837,7 +975,9 @@
       "gain": 2287,
       "upTime": 160,
       "downTime": 115,
-      "nearestLandmark": "Breckenridge"
+      "nearestLandmark": "Breckenridge",
+      "lat": "39d28m22s",
+      "long": "106d06m07s"
     },
     {
       "name": "North Twin Cone Peak and Mount Blaine",
@@ -848,7 +988,9 @@
       "gain": 2489,
       "upTime": 181,
       "downTime": 128,
-      "nearestLandmark": "Jefferson"
+      "nearestLandmark": "Jefferson",
+      "lat": "39d25m48s",
+      "long": "105d40m48s"
     },
     {
       "name": "Paiute Peak",
@@ -859,7 +1001,9 @@
       "gain": 2718,
       "upTime": 165,
       "downTime": 125,
-      "nearestLandmark": "Nederland"
+      "nearestLandmark": "Nederland",
+      "lat": "40d05m54s",
+      "long": "105d37m56s"
     },
     {
       "name": "Ypsilon Mountain",
@@ -871,7 +1015,9 @@
       "upTime": 176,
       "downTime": 106,
       "season": [7, 8, 9, 10],
-      "nearestLandmark": "Estes Park"
+      "nearestLandmark": "Estes Park",
+      "lat": "40.4439",
+      "long": "105.6889"
     },
     {
       "name": "Engineer Mountain",
@@ -883,7 +1029,9 @@
       "upTime": 360,
       "downTime": 240,
       "season": [6, 7, 8, 9, 10],
-      "nearestLandmark": "Ouray"
+      "nearestLandmark": "Ouray",
+      "lat": "37d58m13s",
+      "long": "107d35m16s"
     }
   ]
 }
