@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <v-container>
     <h1 class="display-1 pt-3">Ski</h1>
     <p>
       This year Gabby and I purchased the Ikon Base Pass which includes
@@ -37,7 +37,7 @@
       season, which comes out to
       <strong>${{ costPerTrip }} per trip.</strong>
     </p>
-  </div>
+  </v-container>
 </template>
 
 <script>

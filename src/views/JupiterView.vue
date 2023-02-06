@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <v-container>
     <h1 class="display-1 pt-3">Jupiter</h1>
     <p class="lead">
       Gabrielle and I adopted Jupiter on November 17, 2022. He is a red tabby —
@@ -15,7 +15,7 @@
       :ylabel="axisLabels[1]"
     />
     <hr />
-  </div>
+  </v-container>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <v-container>
     <h1 class="display-1 pt-3">Colorado Summit Climbs</h1>
     <h2>Dave Muller</h2>
     <ClimbMap :hikes="hikes" />
@@ -27,7 +27,7 @@
         {{ item.value.startElev.toLocaleString() }}
       </template>
     </v-data-table>
-  </div>
+  </v-container>
 </template>
 
 <script>

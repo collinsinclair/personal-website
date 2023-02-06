@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <v-container>
     <h1 class="display-1 pt-3">About</h1>
     <p class="lead">
       My name is Collin Sinclair. I am a software developer, theatre music
@@ -235,7 +235,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <style></style>

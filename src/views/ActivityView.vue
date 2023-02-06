@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <v-container>
     <h1 class="display-1 pt-3">Activity</h1>
     <p class="lead">
       On this page I detail my various activities and health/fitness metrics. A
@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>

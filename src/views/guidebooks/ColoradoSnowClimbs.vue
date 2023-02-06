@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <v-container>
     <h1 class="display-1 pt-3">Colorado Snow Climbs</h1>
     <h2>Dave Cooper</h2>
     <hr />
@@ -94,12 +94,10 @@
       <div ref="start-elevation-histogram" class="col-lg"></div>
       <div ref="end-elevation-histogram" class="col-lg"></div>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>
-let currentMonthOnly;
-
 import climbs from "./coloradoSnowClimbs.json";
 import * as Plotly from "plotly.js-dist";
 

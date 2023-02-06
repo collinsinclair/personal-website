@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <v-container>
     <h1 class="display-1 pt-3">Student Loans</h1>
     <single-line-plot
       :x="dates"
@@ -7,7 +7,7 @@
       xlabel="Date"
       ylabel="Total Amount Paid Back"
     />
-  </div>
+  </v-container>
 </template>
 
 <script>
