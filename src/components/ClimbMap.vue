@@ -6,6 +6,8 @@
     :center="mapCenter"
     :zoom="defaultZoom"
   >
+    <MapboxNavigationControl position="bottom-right" visualizePitch="true" />
+    <MapboxGeolocateControl />
     <MapboxMarker
       v-for="hike in hikes"
       :key="hike.name"
@@ -26,14 +28,15 @@
         <p>Gain: {{ hike.gain.toLocaleString() }} ft</p>
       </template>
     </MapboxMarker>
-    <MapboxMarker v-if="userLat && userLng" :lng-lat="[userLng, userLat]">
-      <v-icon icon="mdi-map-marker" style="color: #3877ff"></v-icon>
-    </MapboxMarker>
   </MapboxMap>
 </template>
-
 <script>
-import { MapboxMap, MapboxMarker } from "@studiometa/vue-mapbox-gl";
+import {
+  MapboxMap,
+  MapboxMarker,
+  MapboxNavigationControl,
+  MapboxGeolocateControl,
+} from "@studiometa/vue-mapbox-gl";
 
 export default {
   name: "ClimbMap",
@@ -41,6 +44,8 @@ export default {
   components: {
     MapboxMap,
     MapboxMarker,
+    MapboxNavigationControl,
+    MapboxGeolocateControl,
   },
   data() {
     return {
@@ -49,29 +54,10 @@ export default {
       mapStyle: "mapbox://styles/mapbox/outdoors-v12",
       mapCenter: [-105.5, 39.63],
       defaultZoom: 7,
-      userLat: null,
-      userLng: null,
     };
-  },
-  created() {
-    const success = (position) => {
-      const latitude = position.coords.latitude;
-      const longitude = position.coords.longitude;
-      this.userLat = latitude;
-      this.userLng = longitude;
-      this.mapCenter = [longitude, latitude];
-    };
-
-    const error = (err) => {
-      console.log(err);
-    };
-
-    // This will open permission popup
-    navigator.geolocation.getCurrentPosition(success, error);
   },
 };
 </script>
-
 <style scoped>
 @import "https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css";
 </style>
