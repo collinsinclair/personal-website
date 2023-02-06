@@ -12,17 +12,16 @@
 </template>
 
 <script>
-import { ref } from "vue";
 
 export default {
   name: "TheNavbar",
+  emits: ["toggle-theme"],
+  methods: {
+    toggleTheme() {
+      this.$emit("toggle-theme");
+    },
+  },
 };
-
-const theme = ref("light");
-
-function toggleTheme() {
-  theme.value = theme.value === "light" ? "dark" : "light";
-}
 </script>
 
 <style scoped></style>
