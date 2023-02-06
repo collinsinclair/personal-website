@@ -3,6 +3,7 @@
     <h1 class="display-1 pt-3">Colorado Summit Climbs</h1>
     <h2>Dave Muller</h2>
     <hr />
+    <ClimbMap />
     <v-data-table :items="hikes" :headers="headers">
       <template v-slot:item.elevation="{ item }">
         {{ item.value.elevation.toLocaleString() }}
@@ -22,9 +23,11 @@
 
 <script>
 import data from "./coloradoSummitHikes.json";
+import ClimbMap from "@/components/ClimbMap.vue";
 
 export default {
   name: "ColoradoSummitHikes",
+  components: { ClimbMap },
   data() {
     return {
       hikes: data.hikes,

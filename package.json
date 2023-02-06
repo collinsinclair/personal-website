@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
+    "mapbox-gl": "^2.12.0",
     "plotly.js-dist": "^2.17.0",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6",
