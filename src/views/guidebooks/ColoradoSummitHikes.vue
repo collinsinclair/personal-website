@@ -2,9 +2,14 @@
   <div class="container">
     <h1 class="display-1 pt-3">Colorado Summit Climbs</h1>
     <h2>Dave Muller</h2>
-    <hr />
     <ClimbMap />
     <v-data-table :items="hikes" :headers="headers">
+      <template v-slot:item.difficulty="{ item }">
+        <span
+          :class="item.value.difficultyCSS.className"
+          :style="{ color: item.value.difficultyCSS.color }"
+        ></span>
+      </template>
       <template v-slot:item.elevation="{ item }">
         {{ item.value.elevation.toLocaleString() }}
       </template>
@@ -46,34 +51,6 @@ export default {
   methods: {
     getETEInHours(ETEInMinutes) {
       return (ETEInMinutes / 60).toFixed(1).toLocaleString();
-    },
-    getMonthName(monthNumber) {
-      switch (monthNumber) {
-        case 1:
-          return "Jan";
-        case 2:
-          return "Feb";
-        case 3:
-          return "Mar";
-        case 4:
-          return "Apr";
-        case 5:
-          return "May";
-        case 6:
-          return "Jun";
-        case 7:
-          return "Jul";
-        case 8:
-          return "Aug";
-        case 9:
-          return "Sep";
-        case 10:
-          return "Oct";
-        case 11:
-          return "Nov";
-        case 12:
-          return "Dec";
-      }
     },
     getDifficultyCSS(difficulty) {
       const difficultyCSS = {
