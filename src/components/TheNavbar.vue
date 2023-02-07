@@ -1,8 +1,5 @@
 <template>
   <v-app-bar title="Collin Sinclair">
-    <router-link to="/guidebooks/colorado-summit-hikes"
-      >Colorado Summit Hikes
-    </router-link>
     <v-btn @click="toggleTheme">
       <v-icon
         :icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"

@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <h1 class="display-1 pt-3">Colorado Summit Climbs</h1>
-    <h2>Dave Muller</h2>
+    <h1 class="text-h2">Colorado Summit Climbs</h1>
+    <h2 class="text-subtitle-1">Dave Muller</h2>
     <ClimbMap :hikes="hikes" />
     <v-data-table
       :items="hikes"

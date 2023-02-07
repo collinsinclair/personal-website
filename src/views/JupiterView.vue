@@ -1,20 +1,17 @@
 <template>
   <v-container>
-    <h1 class="display-1 pt-3">Jupiter</h1>
-    <p class="lead">
-      Gabrielle and I adopted Jupiter on November 17, 2022. He is a red tabby —
-      his namesake — (likely with some Maine Coon in him) who was found on the
-      street. He is {{ jupiterAge }} months old.
+    <h1 class="text-h2">Jupiter</h1>
+    <p class="text-body-1">
+      Gabrielle and I adopted Jupiter on November 17, 2022. He is a red tabby
+      Maine Coon who was found on the street. He is {{ jupiterAge }} months old.
     </p>
-    <hr />
-    <h2 class="card-title">Weight</h2>
+    <h2 class="text-h3 py-3">Weight</h2>
     <SingleLinePlot
       :x="dates"
       :y="weights"
       :xlabel="axisLabels[0]"
       :ylabel="axisLabels[1]"
     />
-    <hr />
   </v-container>
 </template>
 
@@ -28,7 +25,7 @@ export default {
     return {
       weights: [
         4.7, 4.5, 5, 4.6, 5.1, 5.4, 6.7, 6.9, 7, 7.2, 7.6, 7.6, 7.4, 7.8, 7.9,
-        8.1, 8.2, 8.3, 8.7, 9.1,
+        8.1, 8.2, 8.3, 8.7, 9.1, 9.4,
       ],
       dates: [
         "2022-11-29",
@@ -51,6 +48,7 @@ export default {
         "2023-01-25",
         "2023-01-28",
         "2023-02-01",
+        "2023-02-06",
       ],
       axisLabels: ["Date", "Weight (lbs)"],
       birthday: new Date("2022-08-08"),
