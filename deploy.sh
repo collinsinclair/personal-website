@@ -1,4 +1,4 @@
-npm run build
+yarn build
 cd dist || exit
 echo "collinsinclair.com" > CNAME
 git add .
