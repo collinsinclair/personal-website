@@ -9,7 +9,6 @@
       "gain": 304,
       "upTime": 12,
       "downTime": 8,
-      "season": [4, 5, 6, 7, 8, 9, 10, 11],
       "nearestLandmark": "Denver",
       "lat": "39d42m11s",
       "long": "105d17m35s"
@@ -23,7 +22,6 @@
       "gain": 220,
       "upTime": 14,
       "downTime": 8,
-      "season": [5, 6, 7, 8, 9, 10],
       "nearestLandmark": "Boulder",
       "lat": "40.0258",
       "long": "105.4522"
@@ -37,7 +35,6 @@
       "gain": 407,
       "upTime": 22,
       "downTime": 8,
-      "season": [5, 6, 7, 8, 9, 10],
       "nearestLandmark": "Colorado Springs",
       "lat": "38d57m02s",
       "long": "104d56m03s"
@@ -51,10 +48,9 @@
       "gain": 431,
       "upTime": 20,
       "downTime": 15,
-      "season": [4, 5, 6, 7, 8, 9, 10, 11],
       "nearestLandmark": "Kittredge",
-      "lat": "39d38m08s",
-      "long": "105d13m36s"
+      "lat": 39.6294284312007,
+      "long": -105.23054534758126
     },
     {
       "name": "Fox Mountain",
@@ -65,7 +61,6 @@
       "gain": 451,
       "upTime": 25,
       "downTime": 15,
-      "season": [5, 6, 7, 8, 9, 10],
       "nearestLandmark": "Idaho Springs",
       "lat": "39d49m59s",
       "long": "105d38m35s"
@@ -79,7 +74,6 @@
       "gain": 427,
       "upTime": 23,
       "downTime": 20,
-      "season": [4, 5, 6, 7, 8, 9, 10, 11],
       "nearestLandmark": "Colorado Springs",
       "lat": "38d47m12s",
       "long": "104d52m38s"
@@ -93,7 +87,6 @@
       "gain": 620,
       "upTime": 30,
       "downTime": 26,
-      "season": [6, 7, 8, 9, 10],
       "nearestLandmark": "Idaho Springs",
       "lat": "39d43m40s",
       "long": "105d35m49s"
@@ -107,7 +100,6 @@
       "gain": 526,
       "upTime": 27,
       "downTime": 21,
-      "season": [5, 6, 7, 8, 9, 10],
       "nearestLandmark": "Idaho Springs",
       "lat": "39d40m46s",
       "long": "105d29m32s"
@@ -121,7 +113,6 @@
       "gain": 542,
       "upTime": 28,
       "downTime": 21,
-      "season": [5, 6, 7, 8, 9, 10, 11],
       "nearestLandmark": "Colorado Springs",
       "lat": "38d44m32s",
       "long": "104d54m43s"
@@ -135,7 +126,6 @@
       "gain": 853,
       "upTime": 34,
       "downTime": 26,
-      "season": [4, 5, 6, 7, 8, 9, 10, 11],
       "nearestLandmark": "Deckers",
       "lat": "39d14m03s",
       "long": "105d16m12s"
@@ -149,7 +139,6 @@
       "gain": 465,
       "upTime": 21,
       "downTime": 38,
-      "season": [4, 5, 6, 7, 8, 9, 10, 11],
       "nearestLandmark": "Evergreen",
       "lat": "39d37m51s",
       "long": "105d20m49s"
@@ -163,7 +152,6 @@
       "gain": 596,
       "upTime": 99,
       "downTime": 0,
-      "season": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
       "nearestLandmark": "Golden",
       "lat": "39.7555",
       "long": "105.2105"
@@ -177,7 +165,6 @@
       "gain": 1130,
       "upTime": 45,
       "downTime": 35,
-      "season": [5, 6, 7, 8, 9, 10],
       "nearestLandmark": "Black Hawk",
       "lat": "39d51m34s",
       "long": "105d30m18s"
@@ -191,7 +178,15 @@
       "gain": 1110,
       "upTime": 53,
       "downTime": 48,
-      "season": [5, 6, 7, 8, 9, 10, 11],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
       "nearestLandmark": "Sedalia",
       "lat": "39d15m37s",
       "long": "105d06m02s"
@@ -205,7 +200,13 @@
       "gain": 1178,
       "upTime": 55,
       "downTime": 38,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Empire",
       "lat": "39d47m45s",
       "long": "105d45m50s"
@@ -219,7 +220,13 @@
       "gain": 1091,
       "upTime": 60,
       "downTime": 40,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Leadville",
       "lat": "39d07m18s",
       "long": "106d12m20s"
@@ -233,7 +240,13 @@
       "gain": 1477,
       "upTime": 56,
       "downTime": 38,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Frisco",
       "lat": "39d34m07s",
       "long": "106d06m32s"
@@ -247,7 +260,14 @@
       "gain": 1129,
       "upTime": 45,
       "downTime": 39,
-      "season": [5, 6, 7, 8, 9, 10],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Idaho Springs",
       "lat": "39d40m32s",
       "long": "105d31m21s"
@@ -261,7 +281,16 @@
       "gain": 459,
       "upTime": 21,
       "downTime": 18,
-      "season": [4, 5, 6, 7, 8, 9, 10, 11],
+      "season": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
       "nearestLandmark": "Golden",
       "lat": "39d44m30s",
       "long": "105d14m24s"
@@ -275,7 +304,16 @@
       "gain": 660,
       "upTime": 38,
       "downTime": 25,
-      "season": [4, 5, 6, 7, 8, 9, 10, 11],
+      "season": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
       "nearestLandmark": "Golden",
       "lat": "39d43m57s",
       "long": "105d14m43s"
@@ -289,7 +327,13 @@
       "gain": 1258,
       "upTime": 57,
       "downTime": 40,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Buena Vista",
       "lat": "38d41m52s",
       "long": "106d27m03s"
@@ -303,7 +347,14 @@
       "gain": 1384,
       "upTime": 56,
       "downTime": 34,
-      "season": [5, 6, 7, 8, 9, 10],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Buena Vista",
       "lat": "38d44m02s",
       "long": "106d24m56s"
@@ -317,7 +368,20 @@
       "gain": 895,
       "upTime": 60,
       "downTime": 45,
-      "season": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "season": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
       "nearestLandmark": "Lakewood",
       "lat": "39d42m03s",
       "long": "105d10m39s"
@@ -331,7 +395,15 @@
       "gain": 1336,
       "upTime": 55,
       "downTime": 53,
-      "season": [5, 6, 7, 8, 9, 10, 11],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
       "nearestLandmark": "Estes Park",
       "lat": "40d19m09s",
       "long": "105d32m27s"
@@ -345,7 +417,13 @@
       "gain": 1370,
       "upTime": 75,
       "downTime": 70,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Georgetown",
       "lat": "39.752206243967265",
       "long": "-105.67583679254948"
@@ -359,7 +437,13 @@
       "gain": 1576,
       "upTime": 66,
       "downTime": 33,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Walden",
       "lat": "40d31m17s",
       "long": "105d54m37s"
@@ -373,7 +457,13 @@
       "gain": 1642,
       "upTime": 90,
       "downTime": 75,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Dillon",
       "lat": "39.678228043767525",
       "long": "105.8577275587587"
@@ -387,7 +477,13 @@
       "gain": 1668,
       "upTime": 77,
       "downTime": 65,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Jefferson",
       "lat": "39d29m03s",
       "long": "105d52m59s"
@@ -401,7 +497,13 @@
       "gain": 1636,
       "upTime": 88,
       "downTime": 86,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Georgetown",
       "lat": "39d33m02s",
       "long": "105d41m34s"
@@ -415,7 +517,13 @@
       "gain": 1789,
       "upTime": 79,
       "downTime": 58,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Fairplay",
       "lat": "39d23m09s",
       "long": "105d55m43s"
@@ -429,7 +537,14 @@
       "gain": 1163,
       "upTime": 80,
       "downTime": 70,
-      "season": [5, 6, 7, 8, 9, 10],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Fairplay",
       "lat": "39d08m07s",
       "long": "106d03m48s"
@@ -443,7 +558,13 @@
       "gain": 1677,
       "upTime": 82,
       "downTime": 58,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Idaho Springs",
       "lat": "39d50m51s",
       "long": "105d39m01s"
@@ -457,7 +578,13 @@
       "gain": 1263,
       "upTime": 83,
       "downTime": 72,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Winter Park",
       "lat": "39d55m30s",
       "long": "105d41m22s"
@@ -471,7 +598,14 @@
       "gain": 2017,
       "upTime": 76,
       "downTime": 54,
-      "season": [5, 6, 7, 8, 9, 10],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Masonville",
       "lat": "40d36m19s",
       "long": "105d28m16s"
@@ -485,7 +619,15 @@
       "gain": 1528,
       "upTime": 90,
       "downTime": 60,
-      "season": [5, 6, 7, 8, 9, 10, 11],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
       "nearestLandmark": "Golden",
       "lat": "39d51m59s",
       "long": "105d26m10s"
@@ -499,7 +641,13 @@
       "gain": 1548,
       "upTime": 90,
       "downTime": 60,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Fairplay",
       "lat": "39d12m33s",
       "long": "106d11m03s"
@@ -513,7 +661,14 @@
       "gain": 1487,
       "upTime": 85,
       "downTime": 60,
-      "season": [5, 6, 7, 8, 9, 10],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Leadville",
       "lat": "39d22m15s",
       "long": "106d11m48s"
@@ -527,7 +682,13 @@
       "gain": 2039,
       "upTime": 85,
       "downTime": 70,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Dillon",
       "lat": "39d25m00s",
       "long": "105d48m28s"
@@ -541,7 +702,20 @@
       "gain": 1688,
       "upTime": 86,
       "downTime": 59,
-      "season": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "season": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
       "nearestLandmark": "Colorado Springs",
       "lat": "38.80130",
       "long": "104.8962"
@@ -555,7 +729,14 @@
       "gain": 2002,
       "upTime": 88,
       "downTime": 76,
-      "season": [5, 6, 7, 8, 9, 10],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Fairplay",
       "lat": "39d19m43s",
       "long": "105d56m51s"
@@ -569,7 +750,13 @@
       "gain": 1704,
       "upTime": 95,
       "downTime": 70,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Fraser",
       "lat": "39d54m08s",
       "long": "105d56m09s"
@@ -583,7 +770,13 @@
       "gain": 1934,
       "upTime": 93,
       "downTime": 54,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Bakerville",
       "lat": "39d39m32s",
       "long": "105d47m59s"
@@ -597,7 +790,15 @@
       "gain": 1902,
       "upTime": 110,
       "downTime": 68,
-      "season": [5, 6, 7, 8, 9, 10, 11],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
       "nearestLandmark": "Meeker Park",
       "lat": "40d13m55s",
       "long": "105d33m34s"
@@ -611,7 +812,13 @@
       "gain": 2340,
       "upTime": 90,
       "downTime": 70,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Empire",
       "lat": "39d43m20s",
       "long": "105d50m21s"
@@ -625,7 +832,14 @@
       "gain": 2568,
       "upTime": 100,
       "downTime": 60,
-      "season": [5, 6, 7, 8, 9, 10],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Idaho Springs",
       "lat": "39d42m06s",
       "long": "105d40m24s"
@@ -639,7 +853,12 @@
       "gain": 2162,
       "upTime": 92,
       "downTime": 67,
-      "season": [7, 8, 9, 10],
+      "season": [
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Alma",
       "lat": "39.3397",
       "long": "106.1400"
@@ -653,7 +872,14 @@
       "gain": 2767,
       "upTime": 110,
       "downTime": 90,
-      "season": [5, 6, 7, 8, 9, 10],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Empire",
       "lat": "39d47m46s",
       "long": "105d51m16s"
@@ -667,7 +893,15 @@
       "gain": 2206,
       "upTime": 87,
       "downTime": 80,
-      "season": [5, 6, 7, 8, 9, 10, 11],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
       "nearestLandmark": "Estes Park",
       "lat": "40d17m43s",
       "long": "105d34m00s"
@@ -681,7 +915,13 @@
       "gain": 2640,
       "upTime": 115,
       "downTime": 85,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Nederland",
       "lat": "39d58m42s",
       "long": "105d35m17s"
@@ -695,7 +935,13 @@
       "gain": 1919,
       "upTime": 123,
       "downTime": 119,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Deckers",
       "lat": "39.25471",
       "long": "105.22694"
@@ -709,7 +955,13 @@
       "gain": 2021,
       "upTime": 125,
       "downTime": 95,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Bakerville",
       "lat": "39d41m44s",
       "long": "105d54m09s"
@@ -723,7 +975,13 @@
       "gain": 2387,
       "upTime": 122,
       "downTime": 95,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Loveland Pass",
       "lat": "39d38m40s",
       "long": "105d50m53s"
@@ -737,7 +995,14 @@
       "gain": 2227,
       "upTime": 120,
       "downTime": 70,
-      "season": [5, 6, 7, 8, 9, 10],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Leadville",
       "lat": "39d29m33s",
       "long": "106d17m38s"
@@ -751,7 +1016,13 @@
       "gain": 1985,
       "upTime": 119,
       "downTime": 92,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Dillon",
       "lat": "39.5361",
       "long": "105.8567"
@@ -765,7 +1036,13 @@
       "gain": 1976,
       "upTime": 140,
       "downTime": 115,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Empire",
       "lat": "39d50m14s",
       "long": "105d47m09s"
@@ -779,7 +1056,13 @@
       "gain": 2125,
       "upTime": 93,
       "downTime": 54,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Bakerville",
       "lat": "39d42m36s",
       "long": "105d52m41s"
@@ -793,7 +1076,14 @@
       "gain": 2552,
       "upTime": 120,
       "downTime": 100,
-      "season": [5, 6, 7, 8, 9, 10],
+      "season": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Redcliff",
       "lat": "39d29m49s",
       "long": "106d19m28s"
@@ -807,7 +1097,12 @@
       "gain": 2602,
       "upTime": 130,
       "downTime": 90,
-      "season": [7, 8, 9, 10],
+      "season": [
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Breckenridge",
       "lat": "39d26m38s",
       "long": "105d58m08s"
@@ -821,7 +1116,13 @@
       "gain": 2394,
       "upTime": 162,
       "downTime": 68,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Georgetown",
       "lat": "39d37m00s",
       "long": "105d45m26s"
@@ -835,7 +1136,12 @@
       "gain": 2443,
       "upTime": 127,
       "downTime": 107,
-      "season": [7, 8, 9, 10],
+      "season": [
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Breckenridge",
       "lat": "39.4033",
       "long": "105.1289"
@@ -849,7 +1155,16 @@
       "gain": 2708,
       "upTime": 120,
       "downTime": 80,
-      "season": [4, 5, 6, 7, 8, 9, 10, 11],
+      "season": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
       "nearestLandmark": "Evergreen",
       "lat": "39d39m58s",
       "long": "105d23m41s"
@@ -863,7 +1178,16 @@
       "gain": 2523,
       "upTime": 185,
       "downTime": 127,
-      "season": [4, 5, 6, 7, 8, 9, 10, 11],
+      "season": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
       "nearestLandmark": "Buffalo Creek",
       "lat": "39d23m43s",
       "long": "105d12m53s"
@@ -877,7 +1201,13 @@
       "gain": 1808,
       "upTime": 185,
       "downTime": 140,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Georgetown",
       "lat": "39d40m58s",
       "long": "105d44m59s"
@@ -891,7 +1221,12 @@
       "gain": 2218,
       "upTime": 106,
       "downTime": 82,
-      "season": [7, 8, 9, 10],
+      "season": [
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Fairplay",
       "lat": "39d11m09s",
       "long": "106d11m05s"
@@ -905,7 +1240,13 @@
       "gain": 2832,
       "upTime": 148,
       "downTime": 95,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Grant",
       "lat": "39d29m40s",
       "long": "105d51m57s"
@@ -919,7 +1260,13 @@
       "gain": 3073,
       "upTime": 142,
       "downTime": 96,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Idaho Springs",
       "lat": "39d38m59s",
       "long": "105d41m28s"
@@ -933,7 +1280,13 @@
       "gain": 3651,
       "upTime": 140,
       "downTime": 90,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Buena Vista",
       "lat": "39d01m05s",
       "long": "106d23m39s"
@@ -947,7 +1300,16 @@
       "gain": 3060,
       "upTime": 153,
       "downTime": 83,
-      "season": [4, 5, 6, 7, 8, 9, 10, 11],
+      "season": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
       "nearestLandmark": "Manitou Springs",
       "lat": "38d51m53s",
       "long": "104d57m48s"
@@ -961,7 +1323,13 @@
       "gain": 3217,
       "upTime": 150,
       "downTime": 90,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Silverthorne",
       "lat": "39d37m00s",
       "long": "106d08m31s"
@@ -1014,7 +1382,12 @@
       "gain": 3123,
       "upTime": 176,
       "downTime": 106,
-      "season": [7, 8, 9, 10],
+      "season": [
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Estes Park",
       "lat": "40.4439",
       "long": "105.6889"
@@ -1028,7 +1401,13 @@
       "gain": 4364,
       "upTime": 360,
       "downTime": 240,
-      "season": [6, 7, 8, 9, 10],
+      "season": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "nearestLandmark": "Ouray",
       "lat": "37d58m13s",
       "long": "107d35m16s"

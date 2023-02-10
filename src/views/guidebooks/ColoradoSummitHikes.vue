@@ -85,26 +85,30 @@ export default {
       const coords = [lng, lat];
       const newCoords = [];
       coords.forEach((coord) => {
-        if (typeof coord !== "string") {
+        if (typeof coord !== "string" && typeof coord !== "number") {
           throw new Error(`Invalid input: ${coord} is not a string`);
         }
-        const match = coord.match(/(-?\d+)d(\d+)m(\d+\.?\d*)s/);
-        if (match) {
-          const [, degrees, minutes, seconds] = match.map(Number);
-          let decimal = degrees + minutes / 60 + seconds / 3600;
-          if (decimal > 50) {
-            decimal *= -1;
-          }
-          newCoords.push(decimal);
-        } else if (!isNaN(Number(coord))) {
-          if (coord > 50) {
-            coord *= -1;
-          }
-          newCoords.push(Number(coord));
+        if (typeof coord === "number") {
+          newCoords.push(coord);
         } else {
-          throw new Error(
-            `Invalid input: ${coord} is not a valid coordinate string`
-          );
+          const match = coord.match(/(-?\d+)d(\d+)m(\d+\.?\d*)s/);
+          if (match) {
+            const [, degrees, minutes, seconds] = match.map(Number);
+            let decimal = degrees + minutes / 60 + seconds / 3600;
+            if (decimal > 50) {
+              decimal *= -1;
+            }
+            newCoords.push(decimal);
+          } else if (!isNaN(Number(coord))) {
+            if (coord > 50) {
+              coord *= -1;
+            }
+            newCoords.push(Number(coord));
+          } else {
+            throw new Error(
+              `Invalid input: ${coord} is not a valid coordinate string`
+            );
+          }
         }
       });
       return newCoords;

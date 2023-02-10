@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer>
+  <v-navigation-drawer :model-value="drawer">
     <v-list nav density="compact">
       <v-list-item
         v-for="route in routes"
@@ -18,6 +18,7 @@
 <script>
 export default {
   name: "NavDrawer",
+  props: ["drawer"],
   data() {
     return {
       routes: [
