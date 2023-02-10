@@ -23,5 +23,3 @@ git push -u -f origin main
 # Remove dist directory
 cd ..
 yes | rm -r dist
-
-# Reset git remote
