@@ -10,6 +10,9 @@ git init
 # Add the remote for the GitHub Pages repository
 git remote add origin https://github.com/collinsinclair/collinsinclair.github.io.git
 
+# Add CNAME
+echo collinsinclair.com > CNAME
+
 # Add the built files to the repository and make a commit
 git add .
 git commit -m "deploy"
