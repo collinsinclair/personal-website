@@ -3,7 +3,7 @@
 </script>
 
 <body>
-	<div class="stars-container min-h-screen bg-zinc-900">
+	<div class="stars-container h-dvh bg-zinc-900">
 		<div class="stars" />
 		<div class="stars" />
 		<div class="stars" />
