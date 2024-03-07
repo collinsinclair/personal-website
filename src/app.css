@@ -1,6 +1,7 @@
 @import '/fonts/berkeley-mono/stylesheet.css';
 @import '/fonts/new-york/stylesheet.css';
 @import '/fonts/sf-rounded/stylesheet.css';
+@import '/fonts/nasalization/stylesheet.css';
 
 @tailwind base;
 @tailwind components;
