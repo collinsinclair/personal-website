@@ -1,6 +1,6 @@
 <div class="flex min-h-screen flex-col items-center justify-center">
 	<h1
-		class="glow-amber text-center font-['Nasalization'] text-5xl text-amber-400 sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl"
+		class="glow-amber text-center font-['Nasalization'] text-4xl text-amber-400 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
 	>
 		COLLIN SINCLAIR
 	</h1>
