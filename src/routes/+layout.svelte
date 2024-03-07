@@ -11,7 +11,9 @@
 		<div class="stars" />
 		<div class="stars" />
 	</div>
-	<slot />
+	<div class="container">
+		<slot />
+	</div>
 </body>
 
 <style lang="scss">
