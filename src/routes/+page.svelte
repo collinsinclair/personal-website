@@ -1,8 +1,10 @@
 <script>
 	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 
 	let description = 'Programmer /// Musician /// Outdoors\u00A0Enjoyer /// Cat\u00A0Dad';
 	let displayDescription = '';
+	let typingCompleted = false;
 
 	onMount(() => {
 		let i = 0;
@@ -12,6 +14,7 @@
 				i++;
 			} else {
 				clearInterval(typingInterval);
+				typingCompleted = true;
 			}
 		}, 100);
 	});
@@ -28,6 +31,14 @@
 	>
 		{displayDescription}
 	</p>
+	{#if typingCompleted}
+		<button
+			class="mt-5 rounded border-2 border-amber-400 px-6 py-2 font-['BerkeleyMono'] text-amber-400 transition-colors duration-300 hover:bg-amber-400 hover:text-black focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-opacity-50"
+			in:fade={{ delay: 500, duration: 700 }}
+		>
+			ENTER
+		</button>
+	{/if}
 </div>
 
 <style>
