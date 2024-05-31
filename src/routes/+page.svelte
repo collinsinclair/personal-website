@@ -16,7 +16,7 @@
 				clearInterval(typingInterval);
 				typingCompleted = true;
 			}
-		}, 100);
+		}, 75);
 	});
 </script>
 
