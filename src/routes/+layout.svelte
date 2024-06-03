@@ -1,19 +1,43 @@
 <script lang="ts">
 	import '../app.css';
+	import { onMount } from 'svelte';
+
+	let atHome = false;
+
+	onMount(() => {
+		checkPath();
+		window.addEventListener('popstate', checkPath); // Listen for changes in history
+		return () => {
+			window.removeEventListener('popstate', checkPath); // Cleanup listener
+		};
+	});
+
+	function checkPath() {
+		atHome = window.location.pathname === '/home';
+	}
 </script>
 
 <body>
-	<div class="stars-container h-dvh bg-black">
-		<div class="stars" />
-		<div class="stars" />
-		<div class="stars" />
-		<div class="stars" />
-		<div class="stars" />
-		<div class="stars" />
-	</div>
-	<div class="container">
-		<slot />
-	</div>
+<div class="stars-container h-dvh bg-black">
+	<div class="stars" />
+	<div class="stars" />
+	<div class="stars" />
+	<div class="stars" />
+	<div class="stars" />
+	<div class="stars" />
+</div>
+<div class="container">
+	{#if atHome}
+	<a href="/home">
+		<button
+			class="mt-3 rounded border-2 border-amber-400 px-3 py-1 font-['BerkeleyMono'] tracking-widest text-amber-400 text-sm transition-colors duration-300 hover:bg-amber-400 hover:text-black"
+		>
+			HOME
+		</button>
+	</a>
+		{/if}
+	<slot />
+</div>
 </body>
 
 <style lang="scss">
