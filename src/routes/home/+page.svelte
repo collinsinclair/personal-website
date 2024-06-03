@@ -1,10 +1,9 @@
 <script>
-	import hacker from '$lib/img/hacker.webp';
 	import piano from '$lib/img/piano.avif';
 	import ridge from '$lib/img/mountain-ridge.avif';
 	import collin from '$lib/img/collin.avif';
 	let items = [
-		{ label: 'Programming', href: '/programming', img: hacker },
+		{ label: 'Programming', href: '/programming', img: piano },
 		{ label: 'Music', href: '/music', img: piano },
 		{ label: 'Adventures', href: '/adventures', img: ridge },
 		{ label: 'About', href: '/about', img: collin }
