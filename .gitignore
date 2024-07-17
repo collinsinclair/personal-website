@@ -4,3 +4,6 @@
 node_modules
 dist
 .cache
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/personal-website.iml
