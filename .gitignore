@@ -7,3 +7,4 @@ dist
 /.idea/.gitignore
 /.idea/modules.xml
 /.idea/personal-website.iml
+/.idea/vcs.xml
