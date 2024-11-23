@@ -151,7 +151,9 @@ Try pressing 'Tab' to autocomplete commands.`;
 			onclick={(e) => e.stopPropagation()}
 			type="text"
 			spellcheck="false"
+			autocapitalize="off"
 			autocomplete="off"
+			autocorrect="off"
 			aria-label="Terminal input"
 		/>
 	</div>
