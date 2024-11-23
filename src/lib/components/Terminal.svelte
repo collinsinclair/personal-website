@@ -14,7 +14,7 @@
 	let inputElement: HTMLInputElement;
 
 	const welcomeMessage = `Welcome to my personal website!
-Type 'help' to see available commands, or use the menu below.
+Type 'help' to see available commands.
 Try pressing 'Tab' to autocomplete commands.`;
 
 	function getCompletions(input: string): string[] {
@@ -111,7 +111,7 @@ Try pressing 'Tab' to autocomplete commands.`;
 		<input
 			bind:this={inputElement}
 			bind:value={currentCommand}
-			on:keydown={handleKeydown}
+			onkeydown={handleKeydown}
 			type="text"
 			spellcheck="false"
 			autocomplete="off"
@@ -127,7 +127,7 @@ Try pressing 'Tab' to autocomplete commands.`;
 		padding: 1.5rem;
 		background: #1a1a1a;
 		color: #f0f0f0;
-		font-family: 'Fira Code', monospace;
+		font-family: 'Berkeley Mono', monospace;
 		border-radius: 6px;
 		min-height: 60vh;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

@@ -3,8 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Your Name | Terminal</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fira-code@6.2.0/distr/fira_code.css" />
+	<title>Collin Sinclair</title>
 </svelte:head>
 
 <main>
