@@ -3,7 +3,6 @@
 	import { commands, findCommand } from '$lib/commands';
 	import type { CommandResult } from '$lib/types';
 	import { themes } from '$lib/themes';
-	import { currentTheme } from '$lib/stores/theme';
 
 	export const focusInput = () => inputElement?.focus();
 
@@ -23,11 +22,30 @@ Try pressing 'Tab' to autocomplete commands.`;
 
 	function getCompletions(input: string): string[] {
 		if (!input) return [];
-		return commands
-			.filter(
-				(cmd) => cmd.name.startsWith(input) || cmd.aliases?.some((alias) => alias.startsWith(input))
-			)
-			.map((cmd) => cmd.name);
+
+		const parts = input.split(' ');
+		const command = parts[0];
+		const arg = parts[1] || '';
+
+		// If we're typing the command name itself
+		if (parts.length === 1) {
+			return commands
+				.filter(
+					(cmd) =>
+						cmd.name.startsWith(input) || cmd.aliases?.some((alias) => alias.startsWith(input))
+				)
+				.map((cmd) => cmd.name);
+		}
+
+		// Special handling for theme command completions
+		if (command === 'theme' && parts.length === 2) {
+			return themes
+				.map((theme) => theme.name)
+				.filter((name) => name.startsWith(arg))
+				.map((name) => `theme ${name}`);
+		}
+
+		return [];
 	}
 
 	async function handleCommand() {
@@ -64,8 +82,22 @@ Try pressing 'Tab' to autocomplete commands.`;
 		} else if (event.key === 'Tab') {
 			event.preventDefault();
 			const completions = getCompletions(currentCommand);
+
 			if (completions.length === 1) {
+				// If there's exactly one match, use it
 				currentCommand = completions[0];
+			} else if (completions.length > 1) {
+				// If there are multiple matches, show them
+				commandHistory = [
+					...commandHistory,
+					{
+						command: currentCommand,
+						output: {
+							content: completions.join('\n'),
+							type: 'info'
+						}
+					}
+				];
 			}
 		} else if (event.key === 'ArrowUp') {
 			event.preventDefault();

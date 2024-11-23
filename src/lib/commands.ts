@@ -1,5 +1,5 @@
 import type { Command } from './types';
-import { themes, getTheme } from './themes';
+import { getTheme, themes } from './themes';
 import { currentTheme } from './stores/theme';
 import { get } from 'svelte/store';
 
