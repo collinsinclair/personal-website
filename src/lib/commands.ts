@@ -1,4 +1,7 @@
 import type { Command } from './types';
+import { themes, getTheme } from './themes';
+import { currentTheme } from './stores/theme';
+import { get } from 'svelte/store';
 
 export const commands: Command[] = [
 	{
@@ -13,6 +16,7 @@ Available commands:
   blog      - View my blog posts
   piano     - View piano practice logs
   projects  - Browse my projects
+  theme     - Change color theme
   clear     - Clear the terminal
   
 Navigation tips:
@@ -32,9 +36,46 @@ Ahoy! I'm Collin, I'm a software engineer and theatre music director. I live in 
 		})
 	},
 	{
+		name: 'theme',
+		description: 'Change the color theme',
+		execute: (args) => {
+			if (args.length === 0) {
+				return {
+					content: `
+Available themes:
+${[...themes]
+	.sort((a, b) => a.name.localeCompare(b.name))
+	.map((t) => `  ${t.name} - ${t.label}`)
+	.join('\n')}
+
+Current theme: ${get(currentTheme)}
+
+Usage: theme <theme-name>`,
+					type: 'info'
+				};
+			}
+
+			const themeName = args[0];
+			const theme = getTheme(themeName);
+
+			if (theme.name === 'default' && themeName !== 'default') {
+				return {
+					content: `Theme '${themeName}' not found. Use 'theme' to see available themes.`,
+					type: 'error'
+				};
+			}
+
+			currentTheme.set(theme.name);
+			return {
+				content: `Theme changed to ${theme.label}`,
+				type: 'success'
+			};
+		}
+	},
+	{
 		name: 'clear',
 		description: 'Clear the terminal',
-		execute: () => ({ content: 'CLEAR' }) // We'll handle this specially
+		execute: () => ({ content: 'CLEAR' })
 	}
 ];
 

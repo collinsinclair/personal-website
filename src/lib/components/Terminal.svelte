@@ -2,6 +2,8 @@
 	import { onMount } from 'svelte';
 	import { commands, findCommand } from '$lib/commands';
 	import type { CommandResult } from '$lib/types';
+	import { themes } from '$lib/themes';
+	import { currentTheme } from '$lib/stores/theme';
 
 	export const focusInput = () => inputElement?.focus();
 
@@ -130,22 +132,24 @@ Try pressing 'Tab' to autocomplete commands.`;
 		padding: 1.5rem;
 		font-family: 'Berkeley Mono', monospace;
 		min-height: 60vh;
+		background-color: var(--color-background);
+		color: var(--color-text);
 	}
 
 	.welcome {
-		color: #00ff00;
+		color: var(--color-success);
 		margin-bottom: 1rem;
 		white-space: pre-wrap;
 	}
 
 	.prompt {
-		color: #00ff00;
+		color: var(--color-primary);
 		margin-right: 1rem;
 		user-select: none;
 	}
 
 	.command {
-		color: #0000ff;
+		color: var(--color-secondary);
 	}
 
 	.input-line {
@@ -157,7 +161,7 @@ Try pressing 'Tab' to autocomplete commands.`;
 	input {
 		background: transparent;
 		border: none;
-		color: #fff;
+		color: var(--color-text);
 		font-family: inherit;
 		font-size: inherit;
 		flex-grow: 1;
@@ -171,11 +175,11 @@ Try pressing 'Tab' to autocomplete commands.`;
 	.output {
 		margin-left: 1rem;
 		white-space: pre-wrap;
-		color: #fff;
+		color: var(--color-text);
 	}
 
 	.error {
-		color: #ff0000;
+		color: var(--color-error);
 	}
 
 	.command-line {
