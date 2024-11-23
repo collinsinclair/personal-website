@@ -140,7 +140,7 @@ Try pressing 'Tab' to autocomplete commands.`;
 
 	.prompt {
 		color: #00ff00;
-		margin-right: 0.5rem;
+		margin-right: 1rem;
 		user-select: none;
 	}
 
@@ -169,7 +169,7 @@ Try pressing 'Tab' to autocomplete commands.`;
 	}
 
 	.output {
-		margin-left: 1.5rem;
+		margin-left: 1rem;
 		white-space: pre-wrap;
 		color: #fff;
 	}

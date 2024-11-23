@@ -26,7 +26,8 @@ Navigation tips:
 		name: 'about',
 		description: 'Learn about me',
 		execute: () => ({
-			content: `Ahoy! I'm Collin, I'm a software engineer and theatre music director. I live in Denver, CO. with my partner Gabrielle and our son Jupiter (who is a cat).`,
+			content: `
+Ahoy! I'm Collin, I'm a software engineer and theatre music director. I live in Denver, CO. with my partner Gabrielle and our son Jupiter (who is a cat).`,
 			type: 'success'
 		})
 	},
