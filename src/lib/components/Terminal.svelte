@@ -3,6 +3,8 @@
 	import { commands, findCommand } from '$lib/commands';
 	import type { CommandResult } from '$lib/types';
 
+	export const focusInput = () => inputElement?.focus();
+
 	interface HistoryEntry {
 		command: string;
 		output: CommandResult;
@@ -112,6 +114,7 @@ Try pressing 'Tab' to autocomplete commands.`;
 			bind:this={inputElement}
 			bind:value={currentCommand}
 			onkeydown={handleKeydown}
+			onclick={(e) => e.stopPropagation()}
 			type="text"
 			spellcheck="false"
 			autocomplete="off"
@@ -123,28 +126,26 @@ Try pressing 'Tab' to autocomplete commands.`;
 <style>
 	.terminal-container {
 		max-width: 800px;
-		margin: 2rem auto;
+		margin: 0 auto;
 		padding: 1.5rem;
-		background: #000;
-		color: #f0f0f0;
 		font-family: 'Berkeley Mono', monospace;
 		min-height: 60vh;
 	}
 
 	.welcome {
-		color: #4caf50;
+		color: #00ff00;
 		margin-bottom: 1rem;
 		white-space: pre-wrap;
 	}
 
 	.prompt {
-		color: #4caf50;
+		color: #00ff00;
 		margin-right: 0.5rem;
 		user-select: none;
 	}
 
 	.command {
-		color: #64b5f6;
+		color: #0000ff;
 	}
 
 	.input-line {
@@ -156,7 +157,7 @@ Try pressing 'Tab' to autocomplete commands.`;
 	input {
 		background: transparent;
 		border: none;
-		color: #f0f0f0;
+		color: #fff;
 		font-family: inherit;
 		font-size: inherit;
 		flex-grow: 1;
@@ -170,11 +171,11 @@ Try pressing 'Tab' to autocomplete commands.`;
 	.output {
 		margin-left: 1.5rem;
 		white-space: pre-wrap;
-		color: #b0bec5;
+		color: #fff;
 	}
 
 	.error {
-		color: #ff5252;
+		color: #ff0000;
 	}
 
 	.command-line {

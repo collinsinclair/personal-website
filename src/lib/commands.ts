@@ -26,14 +26,7 @@ Navigation tips:
 		name: 'about',
 		description: 'Learn about me',
 		execute: () => ({
-			content: `Hi! I'm [Your Name]
-
-I'm a [your role] who loves building things with code.
-
-Quick links:
-  • github   - Visit my GitHub (/github)
-  • linkedin - View my LinkedIn profile (/linkedin)
-  • email    - Contact me (/email)`,
+			content: `Ahoy! I'm Collin, I'm a software engineer and theatre music director. I live in Denver, CO. with my partner Gabrielle and our son Jupiter (who is a cat).`,
 			type: 'success'
 		})
 	},
