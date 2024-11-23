@@ -125,12 +125,10 @@ Try pressing 'Tab' to autocomplete commands.`;
 		max-width: 800px;
 		margin: 2rem auto;
 		padding: 1.5rem;
-		background: #1a1a1a;
+		background: #000;
 		color: #f0f0f0;
 		font-family: 'Berkeley Mono', monospace;
-		border-radius: 6px;
 		min-height: 60vh;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	}
 
 	.welcome {
