@@ -175,10 +175,14 @@ Try pressing 'Tab' to autocomplete commands.`;
 	</div>
 
 	{#if showingDashboard}
-		<div class="dashboard-overlay" onkeydown={handleKeydown}>
+		<div class="dashboard-overlay" role="dialog" aria-labelledby="dashboard-title">
 			<div class="dashboard-header">
-				<h2>Climbing Dashboard</h2>
-				<button class="close-button" onclick={() => (showingDashboard = false)}>
+				<h2 id="dashboard-title">Climbing Dashboard</h2>
+				<button
+					class="close-button"
+					onclick={() => (showingDashboard = false)}
+					onkeydown={(e) => e.key === 'Escape' && (showingDashboard = false)}
+				>
 					[ESC to close]
 				</button>
 			</div>
