@@ -3,6 +3,7 @@
 	import { commands, findCommand } from '$lib/commands';
 	import type { CommandResult } from '$lib/types';
 	import { themes } from '$lib/themes';
+	import ClimbingDashboard from './ClimbingDashboard.svelte';
 
 	export const focusInput = () => inputElement?.focus();
 
@@ -15,6 +16,7 @@
 	let commandHistory = $state<HistoryEntry[]>([]);
 	let historyIndex = $state(-1);
 	let inputElement: HTMLInputElement;
+	let showingDashboard = $state(false);
 
 	const welcomeMessage = `Welcome to my personal website!
 Type 'help' to see available commands.
@@ -45,6 +47,12 @@ Try pressing 'Tab' to autocomplete commands.`;
 				.map((name) => `theme ${name}`);
 		}
 
+		// Add climbing command completions
+		if (command === 'climb' && parts.length === 2) {
+			const subcommands = ['stats', 'log', 'pyramid', 'view'];
+			return subcommands.filter((cmd) => cmd.startsWith(arg)).map((cmd) => `climb ${cmd}`);
+		}
+
 		return [];
 	}
 
@@ -67,6 +75,11 @@ Try pressing 'Tab' to autocomplete commands.`;
 
 		if (result.content === 'CLEAR') {
 			commandHistory = [];
+		} else if (result.content === 'SHOW_DASHBOARD') {
+			showingDashboard = true;
+			currentCommand = '';
+			historyIndex = -1;
+			return;
 		} else {
 			commandHistory = [...commandHistory, { command: trimmedCommand, output: result }];
 		}
@@ -114,6 +127,9 @@ Try pressing 'Tab' to autocomplete commands.`;
 				historyIndex = -1;
 				currentCommand = '';
 			}
+		} else if (event.key === 'Escape' && showingDashboard) {
+			showingDashboard = false;
+			focusInput();
 		}
 	}
 
@@ -157,6 +173,18 @@ Try pressing 'Tab' to autocomplete commands.`;
 			aria-label="Terminal input"
 		/>
 	</div>
+
+	{#if showingDashboard}
+		<div class="dashboard-overlay" onkeydown={handleKeydown}>
+			<div class="dashboard-header">
+				<h2>Climbing Dashboard</h2>
+				<button class="close-button" onclick={() => (showingDashboard = false)}>
+					[ESC to close]
+				</button>
+			</div>
+			<ClimbingDashboard />
+		</div>
+	{/if}
 </div>
 
 <style>
@@ -219,5 +247,45 @@ Try pressing 'Tab' to autocomplete commands.`;
 	.command-line {
 		display: flex;
 		align-items: center;
+	}
+
+	.dashboard-overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: var(--color-background);
+		overflow-y: auto;
+		padding: 2rem;
+		z-index: 1000;
+	}
+
+	.dashboard-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 2rem;
+		border-bottom: 1px solid var(--color-primary);
+		padding-bottom: 1rem;
+	}
+
+	.close-button {
+		background: transparent;
+		border: 1px solid var(--color-primary);
+		color: var(--color-primary);
+		padding: 0.5rem 1rem;
+		cursor: pointer;
+		font-family: inherit;
+	}
+
+	.close-button:hover {
+		background: var(--color-primary);
+		color: var(--color-background);
+	}
+
+	h2 {
+		margin: 0;
+		color: var(--color-primary);
 	}
 </style>
