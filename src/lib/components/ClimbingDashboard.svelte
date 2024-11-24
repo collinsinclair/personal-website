@@ -2,8 +2,8 @@
 <script lang="ts">
 	import { climbingSessions } from '../data/climbing';
 	import {
-		calculateTotalClimbs,
 		calculateGradeDistribution,
+		calculateTotalClimbs,
 		calculateTotalTime,
 		getMostFrequentPartners
 	} from '../utils/climbing-stats';

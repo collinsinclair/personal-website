@@ -9,6 +9,14 @@ import {
 	getMostFrequentPartners
 } from './utils/climbing-stats';
 import { climbingSessions } from './data/climbing';
+import { practiceSessions } from '$lib/data/piano';
+import {
+	calculatePracticeTimeByGenre,
+	calculateTotalPracticeTime,
+	getMostPracticedPieces,
+	getPieceProgressChart,
+	getRepertoireByStatus
+} from '$lib/utils/piano-stats';
 
 // Add these functions at the top level of the file:
 function showClimbingStats(): CommandResult {
@@ -66,7 +74,6 @@ ${createGradePyramid()}`,
 	};
 }
 
-// Then your commands array continues as before...
 export const commands: Command[] = [
 	{
 		name: 'help',
@@ -172,6 +179,106 @@ Use 'climb help <command>' for more information.`,
 				default:
 					return {
 						content: `Unknown subcommand: ${args[0]}. Type 'climb' for available commands.`,
+						type: 'error'
+					};
+			}
+		}
+	},
+	{
+		name: 'piano',
+		description: 'View piano practice data and statistics',
+		execute: (args) => {
+			if (args.length === 0) {
+				return {
+					content: `
+Available piano commands:
+  piano log     - Show recent practice sessions
+  piano stats   - Show practice statistics
+  piano pieces  - Show repertoire status
+  piano view    - Open practice dashboard
+
+Use 'piano help <command>' for more information.`,
+					type: 'info'
+				};
+			}
+
+			switch (args[0]) {
+				case 'log': {
+					const recentSessions = practiceSessions
+						.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+						.slice(0, 5)
+						.map((session) => {
+							const pieces = session.pieces.map((p) => p.piece).join(', ');
+
+							return `
+${session.date} (${session.duration}min)
+Pieces: ${pieces}
+${session.goals ? `Goals achieved: ${session.goals.achieved.join(', ')}` : ''}
+${session.notes ? `Notes: ${session.notes}` : ''}`;
+						})
+						.join('\n' + '-'.repeat(40) + '\n');
+
+					return {
+						content: `
+Recent Practice Sessions
+----------------------${recentSessions}`,
+						type: 'info'
+					};
+				}
+
+				case 'stats': {
+					const totalTime = calculateTotalPracticeTime(30);
+					const genreTimes = calculatePracticeTimeByGenre(30);
+					const mostPracticed = getMostPracticedPieces(30, 3);
+
+					return {
+						content: `
+Practice Statistics (Last 30 Days)
+-------------------------------
+Total practice time: ${Math.floor(totalTime / 60)}h ${totalTime % 60}m
+
+Time by genre:
+  Classical:       ${Math.floor(genreTimes['Classical'] / 60)}h ${Math.round(genreTimes['Classical'] % 60)}m
+  Jazz:           ${Math.floor(genreTimes['Jazz'] / 60)}h ${Math.round(genreTimes['Jazz'] % 60)}m
+  Musical Theatre: ${Math.floor(genreTimes['Musical Theatre'] / 60)}h ${Math.round(genreTimes['Musical Theatre'] % 60)}m
+
+Most practiced pieces:
+${mostPracticed.map((p) => `  ${p.name}: ${Math.floor(p.minutes / 60)}h ${Math.round(p.minutes % 60)}m`).join('\n')}`,
+						type: 'info'
+					};
+				}
+
+				case 'pieces': {
+					const repertoire = getRepertoireByStatus();
+					const sections = ['Active', 'Paused', 'Completed'] as const;
+
+					const content = sections
+						.map(
+							(status) => `
+${status} Pieces
+${'-'.repeat(status.length + 7)}
+${repertoire[status]
+	?.map(
+		(piece) =>
+			`${piece.name} (${piece.genre})
+ ${getPieceProgressChart(piece.name)}`
+	)
+	.join('\n')}`
+						)
+						.join('\n');
+
+					return {
+						content,
+						type: 'info'
+					};
+				}
+
+				case 'view':
+					return { content: 'SHOW_PIANO_DASHBOARD' };
+
+				default:
+					return {
+						content: `Unknown subcommand: ${args[0]}. Type 'piano' for available commands.`,
 						type: 'error'
 					};
 			}
